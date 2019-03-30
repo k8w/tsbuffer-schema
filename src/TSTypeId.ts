@@ -12,10 +12,9 @@ const TSTypeId = {
     Interface: 10,
     ArrayBuffer: 11,
     IndexedAccess: 12,
-    IndexSignature: 13,
-    Reference: 14,
-    Union: 15,
-    Intersection: 16,
+    Reference: 13,
+    Union: 14,
+    Intersection: 15,
     // #endregion
 
     // #region 非TypeScript基本类型，临时过渡用

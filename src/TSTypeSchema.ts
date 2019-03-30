@@ -9,7 +9,6 @@ import LiteralTypeSchema from "./schemas/LiteralTypeSchema";
 import NonPrimitiveTypeSchema from "./schemas/NonPrimitiveTypeSchema";
 import ArrayBufferTypeSchema from "./schemas/ArrayBufferTypeSchema";
 import IndexedAccessTypeSchema from "./schemas/IndexedAccessTypeSchema";
-import IndexSignatureTypeSchema from "./schemas/IndexSignatureTypeSchema";
 import ReferenceTypeSchema from "./schemas/ReferenceTypeSchema";
 import UnionTypeSchema from "./schemas/UnionTypeSchema";
 import IntersectionTypeSchema from "./schemas/IntersectionTypeSchema";
@@ -31,7 +30,6 @@ type TSTypeSchema = BooleanTypeSchema
 	| InterfaceTypeSchema
 	| ArrayBufferTypeSchema
 	| IndexedAccessTypeSchema
-	| IndexSignatureTypeSchema
 	| ReferenceTypeSchema
 	| UnionTypeSchema
 	| IntersectionTypeSchema
