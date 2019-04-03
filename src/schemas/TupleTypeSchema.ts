@@ -3,5 +3,9 @@ import TSTypeSchema from '../TSTypeSchema';
 
 export default interface TupleTypeSchema extends BaseSchema {
     type: 'Tuple';
-    valueTypes: TSTypeSchema[];
+    valueTypes: {
+        /** 编码标识 */
+        id: number,
+        type: TSTypeSchema
+    }[];
 }
