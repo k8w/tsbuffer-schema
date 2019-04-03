@@ -1,5 +1,5 @@
-import TSTypeId from './TSTypeId';
+import TSBufferTypeId from './TSBufferTypeId';
 
 export default interface BaseSchema {
-    type: keyof typeof TSTypeId;
+    type: keyof typeof TSBufferTypeId;
 }

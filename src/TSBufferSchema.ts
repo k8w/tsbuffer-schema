@@ -18,7 +18,7 @@ import OmitTypeSchema from "./schemas/OmitTypeSchema";
 import OverwriteTypeSchema from "./schemas/OverwriteTypeSchema";
 import InterfaceTypeSchema from './schemas/InterfaceTypeSchema';
 
-type TSTypeSchema = BooleanTypeSchema
+type TSBufferSchema = BooleanTypeSchema
 	| NumberTypeSchema
 	| StringTypeSchema
 	| ArrayTypeSchema
@@ -37,4 +37,4 @@ type TSTypeSchema = BooleanTypeSchema
 	| PartialTypeSchema
 	| OmitTypeSchema
 	| OverwriteTypeSchema;
-export default TSTypeSchema;
+export default TSBufferSchema;

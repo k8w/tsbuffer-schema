@@ -1,5 +1,5 @@
 import BaseSchema from '../BaseSchema';
-import TSTypeSchema from '../TSTypeSchema';
+import TSBufferSchema from '../TSBufferSchema';
 
 /**
  * 有namespace的情况

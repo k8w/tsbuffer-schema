@@ -1,4 +1,4 @@
-// TSType extra scalar value types alias (for serialization)
+// TSBuffer extra scalar value types alias (for serialization)
 declare type int8 = number;
 declare type int16 = number;
 declare type int32 = number;

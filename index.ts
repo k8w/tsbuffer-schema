@@ -1,5 +1,5 @@
-import TSTypeId from './src/TSTypeId';
-import TSTypeSchema from './src/TSTypeSchema';
+import TSBufferTypeId from './src/TSBufferTypeId';
+import TSBufferSchema from './src/TSBufferSchema';
 
-export { TSTypeId };
-export { TSTypeSchema };
+export { TSBufferTypeId };
+export { TSBufferSchema };

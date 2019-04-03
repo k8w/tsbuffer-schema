@@ -1,4 +1,4 @@
-const TSTypeId = {
+const TSBufferTypeId = {
     // #region 确定的TypeScript的类型
     Boolean: 1,
     Number: 2,
@@ -24,4 +24,4 @@ const TSTypeId = {
     Overwrite: 104,
     // #endregion
 }
-export default TSTypeId;
+export default TSBufferTypeId;

@@ -1,5 +1,5 @@
 import BaseSchema from '../BaseSchema';
-import TSTypeSchema from '../TSTypeSchema';
+import TSBufferSchema from '../TSBufferSchema';
 import ReferenceTypeSchema from './ReferenceTypeSchema';
 
 export default interface InterfaceTypeSchema extends BaseSchema {
@@ -11,7 +11,7 @@ export default interface InterfaceTypeSchema extends BaseSchema {
     fields: {
         id: number,
         name: string,
-        type: TSTypeSchema
+        type: TSBufferSchema
     }[];
 
     /**
@@ -19,5 +19,5 @@ export default interface InterfaceTypeSchema extends BaseSchema {
      * 为空则代表没有
      * { [key: string]: xxx }
      */
-    indexSignature?: TSTypeSchema;
+    indexSignature?: TSBufferSchema;
 }

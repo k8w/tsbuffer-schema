@@ -24,8 +24,7 @@
     "schema",
     "序列化",
     "binary",
-    "encoding",
-    
+    "encoding"
   ],
   "author": "k8w",
   "license": "Apache-2.0",
