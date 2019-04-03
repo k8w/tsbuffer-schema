@@ -1,4 +1,4 @@
-TSType Schema
+TSBuffer Schema
 ---
 
-See [TSType](https://github.com/k8w/tstype).
+See [TSBuffer](https://github.com/k8w/tsbuffer).

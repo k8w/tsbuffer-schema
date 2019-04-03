@@ -1,7 +1,7 @@
 {
-  "name": "tstype-schema",
-  "version": "1.1.0",
-  "description": "TSType schema declarations",
+  "name": "tsbuffer-schema",
+  "version": "0.0.1",
+  "description": "TSBuffer schema declarations",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
@@ -9,10 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k8w/tstype-schema.git"
+    "url": "git+https://github.com/k8w/tsbuffer-schema.git"
   },
   "keywords": [
-    "TSType",
+    "TSBuffer",
+    "tsbuf",
+    "buffer",
     "k8w",
     "protobuf",
     "TypeScript",
@@ -23,12 +25,12 @@
     "序列化",
     "binary",
     "encoding",
-    "buffer"
+    
   ],
   "author": "k8w",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/k8w/tstype-schema/issues"
+    "url": "https://github.com/k8w/tsbuffer-schema/issues"
   },
-  "homepage": "https://github.com/k8w/tstype#readme"
+  "homepage": "https://github.com/k8w/tsbuffer#readme"
 }
