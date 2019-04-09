@@ -5,5 +5,6 @@ import BaseSchema from '../BaseSchema';
  */
 export default interface LiteralTypeSchema extends BaseSchema {
     type: 'Literal';
-    literal: string | number | boolean | null | undefined;
+    // 未定义等同于undefined
+    literal?: string | number | boolean | null | undefined;
 }
