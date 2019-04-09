@@ -8,7 +8,7 @@ export default interface InterfaceTypeSchema extends BaseSchema {
     /** 继承自哪个interface */
     extends?: ReferenceTypeSchema,
 
-    fields: {
+    properties: {
         id: number,
         name: string,
         type: TSBufferSchema
