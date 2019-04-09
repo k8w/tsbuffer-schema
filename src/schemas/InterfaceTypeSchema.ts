@@ -6,7 +6,7 @@ export default interface InterfaceTypeSchema extends BaseSchema {
     type: 'Interface';
 
     /** 继承自哪个interface */
-    extends?: ReferenceTypeSchema,
+    extends?: ReferenceTypeSchema[],
 
     properties: {
         id: number,
