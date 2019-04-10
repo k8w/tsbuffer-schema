@@ -7,7 +7,7 @@ import EnumTypeSchema from "./schemas/EnumTypeSchema";
 import AnyTypeSchema from "./schemas/AnyTypeSchema";
 import LiteralTypeSchema from "./schemas/LiteralTypeSchema";
 import NonPrimitiveTypeSchema from "./schemas/NonPrimitiveTypeSchema";
-import ArrayBufferTypeSchema from "./schemas/ArrayBufferTypeSchema";
+import ArrayBufferTypeSchema from "./schemas/BufferTypeSchema";
 import IndexedAccessTypeSchema from "./schemas/IndexedAccessTypeSchema";
 import ReferenceTypeSchema from "./schemas/ReferenceTypeSchema";
 import UnionTypeSchema from "./schemas/UnionTypeSchema";

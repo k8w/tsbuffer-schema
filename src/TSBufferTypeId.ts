@@ -10,7 +10,7 @@ const TSBufferTypeId = {
     Literal: 8,
     NonPrimitive: 9,
     Interface: 10,
-    ArrayBuffer: 11,
+    Buffer: 11,
     IndexedAccess: 12,
     Reference: 13,
     Union: 14,
