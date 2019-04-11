@@ -8,7 +8,7 @@ export default interface InterfaceTypeSchema extends BaseSchema {
     /** 继承自哪个interface */
     extends?: ReferenceTypeSchema[],
 
-    properties: {
+    properties?: {
         id: number,
         name: string,
         /** 可选字段 */
