@@ -1,7 +1,5 @@
 import BaseSchema from '../BaseSchema';
 import ReferenceTypeSchema from './ReferenceTypeSchema';
-import LiteralTypeSchema from './LiteralTypeSchema';
-import UnionTypeSchema from './UnionTypeSchema';
 
 /**
  * Reference like XXX['XX']['XX']
@@ -13,11 +11,3 @@ export default interface IndexedAccessTypeSchema extends BaseSchema {
     objectType: ReferenceTypeSchema | IndexedAccessTypeSchema;
     index: string;
 }
-
-interface A {
-    a: { a: string; }
-    b: { b: string; }
-    c: { c: string; }
-}
-
-type Test = A['a' | 'b' | 'c']
