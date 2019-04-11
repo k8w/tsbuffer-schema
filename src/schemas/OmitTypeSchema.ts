@@ -6,5 +6,5 @@ import ReferenceTypeSchema from './ReferenceTypeSchema';
 export default interface OmitTypeSchema extends BaseSchema {
     type: 'Omit';
     target: InterfaceTypeSchema | ReferenceTypeSchema;
-    omitFields: string[];
+    keys: string[];
 }
