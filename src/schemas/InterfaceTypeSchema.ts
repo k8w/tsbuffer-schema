@@ -11,6 +11,8 @@ export default interface InterfaceTypeSchema extends BaseSchema {
     properties: {
         id: number,
         name: string,
+        /** 可选字段 */
+        optional?: boolean,
         type: TSBufferSchema
     }[];
 
