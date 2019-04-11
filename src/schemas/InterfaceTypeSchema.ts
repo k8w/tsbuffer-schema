@@ -21,5 +21,8 @@ export default interface InterfaceTypeSchema extends BaseSchema {
      * 为空则代表没有
      * { [key: string]: xxx }
      */
-    indexSignature?: TSBufferSchema;
+    indexSignature?: {
+        keyType: 'String' | 'Number',
+        type: TSBufferSchema
+    };
 }
