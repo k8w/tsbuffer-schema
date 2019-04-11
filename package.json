@@ -5,7 +5,7 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "bp": "tsc --noEmit && npm run build && cd dist && npm publish && cd ..",
+    "bp": "tsc --noEmit && npm version patch && npm run build && cd dist && npm publish && cd ..",
     "build": "rm -rf dist && tsc -d && cp package.json README.md LICENSE dist/"
   },
   "repository": {
