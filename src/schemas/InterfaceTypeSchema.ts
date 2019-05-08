@@ -1,8 +1,8 @@
-import BaseSchema from '../BaseSchema';
-import TSBufferSchema from '../TSBufferSchema';
-import ReferenceTypeSchema from './ReferenceTypeSchema';
+import { BaseSchema } from '../BaseSchema';
+import { TSBufferSchema } from '../TSBufferSchema';
+import { ReferenceTypeSchema } from './ReferenceTypeSchema';
 
-export default interface InterfaceTypeSchema extends BaseSchema {
+export interface InterfaceTypeSchema extends BaseSchema {
     type: 'Interface';
 
     /** 继承自哪个interface */

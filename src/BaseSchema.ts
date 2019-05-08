@@ -1,5 +1,5 @@
-import TSBufferTypeName from './TSBufferTypeName';
+import { TSBufferTypeName } from './TSBufferTypeName';
 
-export default interface BaseSchema {
+export interface BaseSchema {
     type: TSBufferTypeName;
 }

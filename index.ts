@@ -1,3 +1,5 @@
-import TSBufferSchema from './src/TSBufferSchema';
+import { TSBufferProto } from './src/TSBufferProto';
+import { TSBufferSchema } from './src/TSBufferSchema';
 
-export default TSBufferSchema;
+export { TSBufferSchema };
+export { TSBufferProto };

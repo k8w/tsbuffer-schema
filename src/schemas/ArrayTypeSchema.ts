@@ -1,7 +1,7 @@
-import BaseSchema from '../BaseSchema';
-import TSBufferSchema from '../TSBufferSchema';
+import { BaseSchema } from '../BaseSchema';
+import { TSBufferSchema } from '../TSBufferSchema';
 
-export default interface ArrayTypeSchema extends BaseSchema {
+export interface ArrayTypeSchema extends BaseSchema {
     type: 'Array';
     elementType: TSBufferSchema;
 }

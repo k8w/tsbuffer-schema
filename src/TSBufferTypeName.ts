@@ -1,4 +1,4 @@
-type TSBufferTypeName =
+export type TSBufferTypeName =
     'Boolean' |
     'Number' |
     'String' |
@@ -21,4 +21,3 @@ type TSBufferTypeName =
     'Partial' |
     'Omit' |
     'Overwrite';
-export default TSBufferTypeName;

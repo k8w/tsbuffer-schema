@@ -1,8 +1,8 @@
-import BaseSchema from '../BaseSchema';
+import { BaseSchema } from '../BaseSchema';
 
 /**
  * let a: object;
  */
-export default interface NonPrimitiveTypeSchema extends BaseSchema {
+export interface NonPrimitiveTypeSchema extends BaseSchema {
     type: 'NonPrimitive';
 }

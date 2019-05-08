@@ -1,7 +1,7 @@
-import BaseSchema from '../BaseSchema';
-import TSBufferSchema from '../TSBufferSchema';
+import { BaseSchema } from '../BaseSchema';
+import { TSBufferSchema } from '../TSBufferSchema';
 
-export default interface UnionTypeSchema extends BaseSchema {
+export interface UnionTypeSchema extends BaseSchema {
     type: 'Union';
     members: {
         /** 对应条件MASK第几位 */

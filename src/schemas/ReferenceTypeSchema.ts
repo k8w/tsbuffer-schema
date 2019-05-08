@@ -1,4 +1,4 @@
-import BaseSchema from '../BaseSchema';
+import { BaseSchema } from '../BaseSchema';
 
 /**
  * 有namespace的情况
@@ -12,7 +12,7 @@ import BaseSchema from '../BaseSchema';
  * 
  * 查找引用时，如果targetName没有小数点，直接查Type；如果有小数点，则以小数点隔开查namespace，知道最后一位查Type
  */
-export default interface ReferenceTypeSchema extends BaseSchema {
+export interface ReferenceTypeSchema extends BaseSchema {
     type: 'Reference';
 
     /**

@@ -1,5 +1,5 @@
-import BaseSchema from '../BaseSchema';
+import { BaseSchema } from '../BaseSchema';
 
-export default interface StringTypeSchema extends BaseSchema {
+export interface StringTypeSchema extends BaseSchema {
     type: 'String';
 }

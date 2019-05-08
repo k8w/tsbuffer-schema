@@ -1,6 +1,6 @@
-import BaseSchema from '../BaseSchema';
+import { BaseSchema } from '../BaseSchema';
 
-export default interface EnumTypeSchema extends BaseSchema {
+export interface EnumTypeSchema extends BaseSchema {
     type: 'Enum';
     members: {
         /** 序列化用 */
