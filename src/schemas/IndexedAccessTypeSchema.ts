@@ -1,5 +1,6 @@
 import { BaseSchema } from '../BaseSchema';
-import { TSBufferSchema } from '../TSBufferSchema';
+import { InterfaceReference } from '../InterfaceReference';
+import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 
 /**
  * Reference like XXX['XX']['XX']
@@ -8,6 +9,6 @@ import { TSBufferSchema } from '../TSBufferSchema';
  */
 export interface IndexedAccessTypeSchema extends BaseSchema {
     type: 'IndexedAccess';
-    objectType: TSBufferSchema;
+    objectType: InterfaceTypeSchema | InterfaceReference;
     index: string;
 }
