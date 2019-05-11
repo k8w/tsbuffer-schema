@@ -19,7 +19,7 @@ export interface ReferenceTypeSchema extends BaseSchema {
      * import from where
      * undefined represents current file
      */
-    path?: string;
+    path: string;
 
     /**
      * name of target type
