@@ -1,8 +1,8 @@
 import { BaseSchema } from '../BaseSchema';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
-import { ReferenceTypeSchema } from './ReferenceTypeSchema';
+import { InterfaceReference } from '../InterfaceReference';
 
 export interface PartialTypeSchema extends BaseSchema {
     type: 'Partial';
-    target: InterfaceTypeSchema | ReferenceTypeSchema;
+    target: InterfaceTypeSchema | InterfaceReference;
 }
