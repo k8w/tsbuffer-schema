@@ -4,4 +4,5 @@ import { TSBufferSchema } from '../TSBufferSchema';
 export interface TupleTypeSchema extends BaseSchema {
     type: 'Tuple';
     elementTypes: TSBufferSchema[];
+    optionalStartIndex?: number;
 }
