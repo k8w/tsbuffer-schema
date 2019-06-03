@@ -2,7 +2,6 @@
 
 // Varint Encoding
 declare type int = number;
-declare type sint = number; // zig-zag varint
 declare type uint = number;
 
 // Fixed Length Encoding
