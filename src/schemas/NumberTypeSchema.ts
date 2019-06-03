@@ -7,5 +7,5 @@ export interface NumberTypeSchema extends BaseSchema {
      * bigint 默认对应uint64
      * 只有 x64 允许bigint
      */
-    scalarType?: 'int' | 'sint' | 'uint' | 'int32' | 'int64' | 'uint32' | 'uint64' | 'bigint' | 'float' | 'double';
+    scalarType?: 'int' | 'uint' | 'int32' | 'int64' | 'uint32' | 'uint64' | 'bigint' | 'float' | 'double';
 }
