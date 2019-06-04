@@ -1,6 +1,6 @@
 {
   "name": "tsbuffer-schema",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "TSBuffer schema declarations",
   "main": "index.js",
   "typings": "index.d.ts",
