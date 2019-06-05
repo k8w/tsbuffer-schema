@@ -1,6 +1,6 @@
 import { BaseSchema } from '../BaseSchema';
 import { TSBufferSchema } from '../TSBufferSchema';
-import { ReferenceTypeSchema } from './ReferenceTypeSchema';
+import { InterfaceReference } from '../InterfaceReference';
 
 export interface InterfaceTypeSchema extends BaseSchema {
     type: 'Interface';
@@ -8,7 +8,7 @@ export interface InterfaceTypeSchema extends BaseSchema {
     /** 继承自哪个interface */
     extends?: {
         id: number,
-        type: ReferenceTypeSchema
+        type: InterfaceReference
     }[],
 
     properties?: {
