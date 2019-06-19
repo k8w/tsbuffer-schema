@@ -15,14 +15,6 @@ import { BaseSchema } from '../BaseSchema';
 export interface ReferenceTypeSchema extends BaseSchema {
     type: 'Reference';
 
-    /**
-     * import from where
-     * undefined represents current file
-     */
-    path: string;
-
-    /**
-     * name of target type
-     */
-    targetName: string;
+    /** 引用目标的SchemaID */
+    target: string;
 }
