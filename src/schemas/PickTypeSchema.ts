@@ -1,8 +1,7 @@
-import { BaseSchema } from '../BaseSchema';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { InterfaceReference } from '../InterfaceReference';
 
-export interface PickTypeSchema extends BaseSchema {
+export interface PickTypeSchema {
     type: 'Pick';
     target: InterfaceTypeSchema | InterfaceReference;
     keys: string[];

@@ -1,6 +1,4 @@
-import { BaseSchema } from '../BaseSchema';
-
 /** 任意类型 */
-export interface AnyTypeSchema extends BaseSchema {
+export interface AnyTypeSchema {
     type: 'Any';
 }

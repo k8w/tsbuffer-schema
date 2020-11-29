@@ -1,23 +1,3 @@
-export type TSBufferTypeName =
-    'Boolean' |
-    'Number' |
-    'String' |
-    'Array' |
-    'Tuple' |
-    'Enum' |
-    'Any' |
-    'Literal' |
-    'NonPrimitive' |
-    'Interface' |
-    'Buffer' |
-    'IndexedAccess' |
-    'Reference' |
-    'Union' |
-    'Intersection' |
-    // #endregion
+import { TSBufferSchema } from "..";
 
-    // #region 非TypeScript基本类型，临时过渡用
-    'Pick' |
-    'Partial' |
-    'Omit' |
-    'Overwrite';
+export type TSBufferTypeName = Pick<TSBufferSchema, 'type'>;

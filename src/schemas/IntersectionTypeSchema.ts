@@ -1,7 +1,6 @@
-import { BaseSchema } from '../BaseSchema';
 import { TSBufferSchema } from '../TSBufferSchema';
 
-export interface IntersectionTypeSchema extends BaseSchema {
+export interface IntersectionTypeSchema {
     type: 'Intersection';
     members: {
         id: number,

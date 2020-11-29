@@ -1,7 +1,6 @@
-import { BaseSchema } from '../BaseSchema';
 import { TSBufferSchema } from '../TSBufferSchema';
 
-export interface TupleTypeSchema extends BaseSchema {
+export interface TupleTypeSchema {
     type: 'Tuple';
     elementTypes: TSBufferSchema[];
     optionalStartIndex?: number;

@@ -1,6 +1,4 @@
-import { BaseSchema } from '../BaseSchema';
-
-export interface NumberTypeSchema extends BaseSchema {
+export interface NumberTypeSchema {
     type: 'Number';
     /** 
      * 默认为float64

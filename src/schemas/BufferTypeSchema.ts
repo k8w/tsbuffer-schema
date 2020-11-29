@@ -1,6 +1,4 @@
-import { BaseSchema } from '../BaseSchema';
-
-export interface BufferTypeSchema extends BaseSchema {
+export interface BufferTypeSchema {
     type: 'Buffer';
     /**
      * 有该字段，代表类型为该字段对应的TypedArray，否则该字段为ArrayBuffer

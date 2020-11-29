@@ -1,5 +1,3 @@
-import { BaseSchema } from '../BaseSchema';
-
-export interface BooleanTypeSchema extends BaseSchema {
+export interface BooleanTypeSchema {
     type: 'Boolean';
 }
