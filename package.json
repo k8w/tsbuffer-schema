@@ -1,12 +1,14 @@
 {
   "name": "tsbuffer-schema",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "TSBuffer schema declarations",
   "main": "index.js",
+  "type": "module",
   "typings": "index.d.ts",
   "scripts": {
     "bp": "tsc --noEmit && npm version patch && npm run build && cd dist && npm publish && cd ..",
-    "build": "rm -rf dist && tsc -d && cp package.json README.md LICENSE dist/"
+    "build": "rm -rf dist && npx tsc && npm run copy-dts && cp package.json README.md LICENSE dist/",
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" dist/src"
   },
   "repository": {
     "type": "git",
@@ -32,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/k8w/tsbuffer-schema/issues"
   },
-  "homepage": "https://github.com/k8w/tsbuffer#readme"
+  "homepage": "https://github.com/k8w/tsbuffer#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }
