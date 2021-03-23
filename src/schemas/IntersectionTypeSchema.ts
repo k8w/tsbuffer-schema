@@ -1,4 +1,4 @@
-import { TSBufferSchema } from '../TSBufferSchema';
+import { TSBufferSchema } from "../models/TSBufferSchema";
 
 export interface IntersectionTypeSchema {
     type: 'Intersection';

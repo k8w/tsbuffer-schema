@@ -1,4 +1,4 @@
-import { InterfaceReference } from '../InterfaceReference';
+import { InterfaceReference } from '../models/InterfaceReference';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 
 /**

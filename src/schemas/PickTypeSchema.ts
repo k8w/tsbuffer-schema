@@ -1,9 +1,10 @@
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
-import { InterfaceReference } from '../InterfaceReference';
+import { InterfaceReference } from '../models/InterfaceReference';
 import { IntersectionTypeSchema } from './IntersectionTypeSchema';
 import { UnionTypeSchema } from './UnionTypeSchema';
 
-export interface PartialTypeSchema {
-    type: 'Partial';
+export interface PickTypeSchema {
+    type: 'Pick';
     target: InterfaceTypeSchema | InterfaceReference | UnionTypeSchema | IntersectionTypeSchema;
+    keys: string[];
 }
