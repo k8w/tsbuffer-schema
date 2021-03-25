@@ -10,7 +10,7 @@ export { InterfaceTypeSchema } from "./schemas/InterfaceTypeSchema";
 export { IntersectionTypeSchema } from "./schemas/IntersectionTypeSchema";
 export { LiteralTypeSchema } from "./schemas/LiteralTypeSchema";
 export { NonNullableTypeSchema } from "./schemas/NonNullableTypeSchema";
-export { ObjectTypeSchema } from "./schemas/ObjectTypeSchema";
+export { NonPrimitiveTypeSchema } from "./schemas/NonPrimitiveTypeSchema";
 export { NumberTypeSchema } from "./schemas/NumberTypeSchema";
 export { OmitTypeSchema } from "./schemas/OmitTypeSchema";
 export { OverwriteTypeSchema } from "./schemas/OverwriteTypeSchema";

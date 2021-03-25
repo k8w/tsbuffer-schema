@@ -8,7 +8,7 @@ export enum SchemaType {
     Enum = 'Enum',
     Any = 'Any',
     Literal = 'Literal',
-    Object = 'Object',
+    NonPrimitive = 'NonPrimitive',
     Interface = 'Interface',
     Buffer = 'Buffer',
     IndexedAccess = 'IndexedAccess',
