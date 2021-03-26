@@ -1,0 +1,2484 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.13.2",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "tsbuffer-schema!",
+  "docComment": "",
+  "name": "tsbuffer-schema",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "tsbuffer-schema!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!AnyTypeSchema:interface",
+          "docComment": "/**\n * 任意类型\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface AnyTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AnyTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!AnyTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Any'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!ArrayTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ArrayTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ArrayTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!ArrayTypeSchema#elementType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "elementType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "elementType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!ArrayTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Array'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!BooleanTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface BooleanTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BooleanTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!BooleanTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Boolean'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!BufferTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface BufferTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BufferTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!BufferTypeSchema#arrayType:member",
+              "docComment": "/**\n * 有该字段，代表类型为该字段对应的TypedArray，否则该字段为ArrayBuffer\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "arrayType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Int8Array' | 'Int16Array' | 'Int32Array' | 'BigInt64Array' | 'Uint8Array' | 'Uint16Array' | 'Uint32Array' | 'BigUint64Array' | 'Float32Array' | 'Float64Array'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "arrayType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!BufferTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Buffer'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!DateTypeSchema:interface",
+          "docComment": "/**\n * JavaScript Date\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DateTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DateTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!DateTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Date'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!EnumTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface EnumTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "EnumTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!EnumTypeSchema#members:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "members: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        value: string | number;\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "members",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!EnumTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Enum'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema:interface",
+          "docComment": "/**\n * Reference like XXX['XX']['XX'] 注意 A['b' | 'c']不是IndexedAccessType，它们应该作为一个 UnionType被识别 应该等价于 A['b'] | A['c']\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IndexedAccessTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IndexedAccessTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema#index:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "index: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "index",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema#objectType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "objectType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "objectType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'IndexedAccess'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "tsbuffer-schema!InterfaceReference:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type InterfaceReference = "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypeReference",
+              "canonicalReference": "tsbuffer-schema!TypeReference:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "PickTypeSchema",
+              "canonicalReference": "tsbuffer-schema!PickTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "PartialTypeSchema",
+              "canonicalReference": "tsbuffer-schema!PartialTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "OverwriteTypeSchema",
+              "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "OmitTypeSchema",
+              "canonicalReference": "tsbuffer-schema!OmitTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InterfaceReference",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface InterfaceTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InterfaceTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#extends:member",
+              "docComment": "/**\n * 继承自哪个interface\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "extends?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "extends",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#indexSignature:member",
+              "docComment": "/**\n * 索引签名 为空则代表没有 { [key: string]: xxx }\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "indexSignature?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        keyType: 'String' | 'Number';\n        type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "indexSignature",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#properties:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "properties?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        name: string;\n        optional?: boolean;\n        type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "properties",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Interface'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IntersectionTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IntersectionTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema#members:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "members: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "members",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Intersection'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!LiteralTypeSchema:interface",
+          "docComment": "/**\n * Include never type\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface LiteralTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LiteralTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!LiteralTypeSchema#literal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "literal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number | boolean | null | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "literal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!LiteralTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Literal'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!NonNullableTypeSchema:interface",
+          "docComment": "/**\n * TypeScript NonNullable<T>\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface NonNullableTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NonNullableTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!NonNullableTypeSchema#target:member",
+              "docComment": "/**\n * 引用目标的SchemaID\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!NonNullableTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'NonNullable'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!NonPrimitiveTypeSchema:interface",
+          "docComment": "/**\n * let a: object;\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface NonPrimitiveTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NonPrimitiveTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!NonPrimitiveTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'NonPrimitive'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!NumberTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface NumberTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NumberTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!NumberTypeSchema#scalarType:member",
+              "docComment": "/**\n * 默认为float64 bigint 默认对应uint64 只有 x64 允许bigint\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "scalarType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'int' | 'uint' | 'bigint' | 'bigint64' | 'biguint64' | 'double'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "scalarType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!NumberTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Number'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!OmitTypeSchema:interface",
+          "docComment": "/**\n * equivalent to PickType\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface OmitTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OmitTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OmitTypeSchema#keys:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "keys: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "keys",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OmitTypeSchema#target:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UnionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IntersectionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OmitTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Omit'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema:interface",
+          "docComment": "/**\n * equivalent to pick & overwrite\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface OverwriteTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OverwriteTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema#overwrite:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "overwrite: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "overwrite",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema#target:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Overwrite'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!PartialTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface PartialTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PartialTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!PartialTypeSchema#target:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UnionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IntersectionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!PartialTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Partial'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!PickTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface PickTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PickTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!PickTypeSchema#keys:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "keys: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "keys",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!PickTypeSchema#target:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InterfaceReference",
+                  "canonicalReference": "tsbuffer-schema!InterfaceReference:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UnionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IntersectionTypeSchema",
+                  "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!PickTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Pick'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema:interface",
+          "docComment": "/**\n * 有namespace的情况\n *\n * import { MyNS } from './myns'; type MyType2 = MyNS.MyType;\n *\n * MyType2 ↓ importPath: './myns' targetName: 'MyNS.MyType'\n *\n * 查找引用时，如果targetName没有小数点，直接查Type；如果有小数点，则以小数点隔开查namespace，知道最后一位查Type\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ReferenceTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReferenceTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema#target:member",
+              "docComment": "/**\n * 引用目标的SchemaID\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Reference'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "tsbuffer-schema!SchemaType:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum SchemaType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SchemaType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Any:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Any = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Any\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Any",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Array:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Array = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Array\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Array",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Boolean:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Boolean = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Boolean\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Boolean",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Buffer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Buffer = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Buffer\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Buffer",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Date:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Date = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Date\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Date",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Enum:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Enum = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Enum\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Enum",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.IndexedAccess:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "IndexedAccess = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"IndexedAccess\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "IndexedAccess",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Interface:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Interface = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Interface\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Interface",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Intersection:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Intersection = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Intersection\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Intersection",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Literal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Literal = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Literal\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Literal",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.NonNullable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "NonNullable = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"NonNullable\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "NonNullable",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.NonPrimitive:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "NonPrimitive = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"NonPrimitive\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "NonPrimitive",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Number:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Number = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Number\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Number",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Omit:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Omit = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Omit\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Omit",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Overwrite:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Overwrite = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Overwrite\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Overwrite",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Partial:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Partial = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Partial\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Partial",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Pick:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Pick = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Pick\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Pick",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Reference:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Reference = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Reference\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Reference",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.String:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "String = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"String\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "String",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Tuple:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Tuple = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Tuple\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Tuple",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "tsbuffer-schema!SchemaType.Union:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Union = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"Union\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Union",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!StringTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StringTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StringTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!StringTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'String'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!TSBufferProto:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TSBufferProto "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TSBufferProto",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "tsbuffer-schema!TSBufferProto:index(1)",
+              "docComment": "/**\n * 于baseDir的文件的相对路径 不带扩展名的 例如 a/b/c/index.ts 的key会是 a/b/c/index 不会是 a/b/c 路径Key/SymbolName 例子： a/b/c/index.ts 内的 Test类型，其SchemaID为 a/b/c/index/Test a/b/c/index.ts 内的 NS命名空间下的Test类型，其SchemaID为 a/b/c/index/NS.Test\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "[schemaId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "schemaId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "tsbuffer-schema!TSBufferSchema:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TSBufferSchema = "
+            },
+            {
+              "kind": "Reference",
+              "text": "BooleanTypeSchema",
+              "canonicalReference": "tsbuffer-schema!BooleanTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "NumberTypeSchema",
+              "canonicalReference": "tsbuffer-schema!NumberTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringTypeSchema",
+              "canonicalReference": "tsbuffer-schema!StringTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ArrayTypeSchema",
+              "canonicalReference": "tsbuffer-schema!ArrayTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TupleTypeSchema",
+              "canonicalReference": "tsbuffer-schema!TupleTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "EnumTypeSchema",
+              "canonicalReference": "tsbuffer-schema!EnumTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "AnyTypeSchema",
+              "canonicalReference": "tsbuffer-schema!AnyTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "LiteralTypeSchema",
+              "canonicalReference": "tsbuffer-schema!LiteralTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "NonPrimitiveTypeSchema",
+              "canonicalReference": "tsbuffer-schema!NonPrimitiveTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "InterfaceTypeSchema",
+              "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "BufferTypeSchema",
+              "canonicalReference": "tsbuffer-schema!BufferTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IndexedAccessTypeSchema",
+              "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReferenceTypeSchema",
+              "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "UnionTypeSchema",
+              "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IntersectionTypeSchema",
+              "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "PickTypeSchema",
+              "canonicalReference": "tsbuffer-schema!PickTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "PartialTypeSchema",
+              "canonicalReference": "tsbuffer-schema!PartialTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "OmitTypeSchema",
+              "canonicalReference": "tsbuffer-schema!OmitTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "OverwriteTypeSchema",
+              "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "NonNullableTypeSchema",
+              "canonicalReference": "tsbuffer-schema!NonNullableTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "DateTypeSchema",
+              "canonicalReference": "tsbuffer-schema!DateTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TSBufferSchema",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 42
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!TupleTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TupleTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TupleTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!TupleTypeSchema#elementTypes:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "elementTypes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "elementTypes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!TupleTypeSchema#optionalStartIndex:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "optionalStartIndex?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "optionalStartIndex",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!TupleTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Tuple'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "tsbuffer-schema!TypeReference:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TypeReference = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReferenceTypeSchema",
+              "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IndexedAccessTypeSchema",
+              "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TypeReference",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface UnionTypeSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UnionTypeSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!UnionTypeSchema#members:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "members: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TSBufferSchema",
+                  "canonicalReference": "tsbuffer-schema!TSBufferSchema:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "members",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "tsbuffer-schema!UnionTypeSchema#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'Union'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}
