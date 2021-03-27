@@ -41,7 +41,12 @@
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [bigint64](./tsbuffer-schema.bigint64.md) |  |
+|  [biguint64](./tsbuffer-schema.biguint64.md) |  |
+|  [double](./tsbuffer-schema.double.md) |  |
+|  [int](./tsbuffer-schema.int.md) |  |
 |  [InterfaceReference](./tsbuffer-schema.interfacereference.md) |  |
 |  [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md) |  |
 |  [TypeReference](./tsbuffer-schema.typereference.md) |  |
+|  [uint](./tsbuffer-schema.uint.md) |  |
 

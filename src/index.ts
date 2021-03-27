@@ -11,7 +11,7 @@ export { IntersectionTypeSchema } from "./schemas/IntersectionTypeSchema";
 export { LiteralTypeSchema } from "./schemas/LiteralTypeSchema";
 export { NonNullableTypeSchema } from "./schemas/NonNullableTypeSchema";
 export { NonPrimitiveTypeSchema } from "./schemas/NonPrimitiveTypeSchema";
-export { NumberTypeSchema } from "./schemas/NumberTypeSchema";
+export { NumberTypeSchema, int, uint, double, bigint64, biguint64 } from "./schemas/NumberTypeSchema";
 export { OmitTypeSchema } from "./schemas/OmitTypeSchema";
 export { OverwriteTypeSchema } from "./schemas/OverwriteTypeSchema";
 export { PartialTypeSchema } from "./schemas/PartialTypeSchema";
