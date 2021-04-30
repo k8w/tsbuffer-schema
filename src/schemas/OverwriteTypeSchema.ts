@@ -25,3 +25,8 @@ export interface OverwriteTypeSchema {
     target: InterfaceTypeSchema | InterfaceReference;
     overwrite: InterfaceTypeSchema | InterfaceReference;
 }
+
+/**
+ * Overwrite some properties from a interface
+ */
+export type Overwrite<T, U> = T extends unknown ? Pick<T, Exclude<keyof T, keyof U>> & U : never;

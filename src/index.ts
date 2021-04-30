@@ -27,5 +27,3 @@ export { SchemaType } from "./models/SchemaType";
 export { TSBufferProto } from "./models/TSBufferProto";
 export { TSBufferSchema } from "./models/TSBufferSchema";
 export { TypeReference } from "./models/TypeReference";
-
-export type Overwrite<T, U> = T extends unknown ? Pick<T, Exclude<keyof T, keyof U>> & U : never;

@@ -46,7 +46,7 @@
 |  [double](./tsbuffer-schema.double.md) | Encoded as 64-bit <code>double</code> type |
 |  [int](./tsbuffer-schema.int.md) | Encoded as [Varint](https://developers.google.com/protocol-buffers/docs/encoding#varints) |
 |  [InterfaceReference](./tsbuffer-schema.interfacereference.md) |  |
-|  [Overwrite](./tsbuffer-schema.overwrite.md) |  |
+|  [Overwrite](./tsbuffer-schema.overwrite.md) | Overwrite some properties from a interface |
 |  [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md) |  |
 |  [TypeReference](./tsbuffer-schema.typereference.md) |  |
 |  [uint](./tsbuffer-schema.uint.md) | Encoded as [Varint](https://developers.google.com/protocol-buffers/docs/encoding#varints) |

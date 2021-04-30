@@ -4,6 +4,8 @@
 
 ## Overwrite type
 
+Overwrite some properties from a interface
+
 <b>Signature:</b>
 
 ```typescript
