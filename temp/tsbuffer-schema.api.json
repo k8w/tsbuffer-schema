@@ -1,9 +1,163 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.13.2",
-    "schemaVersion": 1003,
-    "oldestForwardsCompatibleVersion": 1001
+    "toolVersion": "7.15.0",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
   },
   "kind": "Package",
   "canonicalReference": "tsbuffer-schema!",
@@ -18,7 +172,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!AnyTypeSchema:interface",
-          "docComment": "/**\n * 任意类型\n */\n",
+          "docComment": "/**\n * TypeScript Any Type\n *\n * @example\n * ```ts\n * type XXX = any;\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -60,7 +214,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!ArrayTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Array Type\n *\n * @example\n * ```ts\n * type A = string[];\n * type B = Array<A>;\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -129,7 +283,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "tsbuffer-schema!bigint64:type",
-          "docComment": "",
+          "docComment": "/**\n * Encoded as 64-bit `int64`\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -154,7 +308,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "tsbuffer-schema!biguint64:type",
-          "docComment": "",
+          "docComment": "/**\n * Encoded as 64-bit `uint64`\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -179,7 +333,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!BooleanTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Boolean Type\n *\n * @example\n * ```ts\n * type A = boolean;\n * ```\n *\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -221,7 +375,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!BufferTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * Buffer Type, include `ArrayBuffer` and typed arrays (e.g. `Uint8Array`).\n *\n * @example\n * ```ts\n * type A = ArrayBuffer;\n * type B = Uint8Array;\n * ```\n *\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -289,7 +443,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!DateTypeSchema:interface",
-          "docComment": "/**\n * JavaScript Date\n */\n",
+          "docComment": "/**\n * JavaScript Date Type\n *\n * @example\n * ```ts\n * type A = Date;\n * ```\n *\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -331,7 +485,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "tsbuffer-schema!double:type",
-          "docComment": "",
+          "docComment": "/**\n * Encoded as 64-bit `double` type\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -356,7 +510,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!EnumTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Enum Type\n *\n * @example\n * ```ts\n * enum JobName {\n *     Teacher,\n *     Doctor,\n *     Salesman\n * }\n *\n * enum Status {\n *     Normal = 'Normal',\n *     Expired = 'Expired'\n * }\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#enums}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -424,7 +578,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!IndexedAccessTypeSchema:interface",
-          "docComment": "/**\n * Reference like XXX['XX']['XX'] 注意 A['b' | 'c']不是IndexedAccessType，它们应该作为一个 UnionType被识别 应该等价于 A['b'] | A['c']\n */\n",
+          "docComment": "/**\n * TypeScript Indexed Access Type\n *\n * @remarks\n *\n * `XXX['a' | 'b']` is not a `IndexedAccessType`, which should be a `{@link UnionType}`. (Equivalent to `XXX['a'] | XXX['b']`)\n *\n * @example\n * ```ts\n * type A = SomeInterface['XXX']\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -528,7 +682,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "tsbuffer-schema!int:type",
-          "docComment": "",
+          "docComment": "/**\n * Encoded as {@link https://developers.google.com/protocol-buffers/docs/encoding#varints | Varint}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -615,7 +769,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Interface Type\n *\n * @example\n * ```ts\n * interface AAA {\n *     a: string,\n *     b?: number[],\n *     c: {\n *         value: boolean\n *     }\n * }\n *\n * // Index Signature\n * interface BBB {\n *     [key: string]: string;\n * }\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -628,7 +782,7 @@
             {
               "kind": "PropertySignature",
               "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#extends:member",
-              "docComment": "/**\n * 继承自哪个interface\n */\n",
+              "docComment": "/**\n * Extends which interface\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -663,7 +817,7 @@
             {
               "kind": "PropertySignature",
               "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#indexSignature:member",
-              "docComment": "/**\n * 索引签名 为空则代表没有 { [key: string]: xxx }\n */\n",
+              "docComment": "/**\n * Index Signature `undefined` represents no index signature, i.e. excess property is not allowed. { [key: string]: xxx }\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -698,7 +852,7 @@
             {
               "kind": "PropertySignature",
               "canonicalReference": "tsbuffer-schema!InterfaceTypeSchema#properties:member",
-              "docComment": "",
+              "docComment": "/**\n * Self properties (not include extended)\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -762,7 +916,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!IntersectionTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Intersection Type, like `A & B`\n *\n * @example\n * ```ts\n * type X1 = A & B;\n * type X2 = A & (B | C);\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -839,7 +993,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!LiteralTypeSchema:interface",
-          "docComment": "/**\n * Include never type\n */\n",
+          "docComment": "/**\n * TypeScript Literal Type Literal Type is very useful to reduce encoded buffer size. No matter how long the literal is, the encoded buffer is always less than 1 byte.\n *\n * @example\n * ```ts\n * type A = 'XXXX';\n *\n * // Always appears with UnionType, like:\n * type Gender = 'Male' | 'Female';\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/literal-types.html}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -907,7 +1061,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!NonNullableTypeSchema:interface",
-          "docComment": "/**\n * TypeScript NonNullable<T>\n */\n",
+          "docComment": "/**\n * TypeScript NonNullable<T>\n *\n * @example\n * ```ts\n * type A = NonNullable<B>;\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -975,7 +1129,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!NonPrimitiveTypeSchema:interface",
-          "docComment": "/**\n * let a: object;\n */\n",
+          "docComment": "/**\n * TypeScript Object Type Represents anything that is not `number`, `string`, `boolean`, `bigint`, `symbol`, `null`, or `undefined`.\n *\n * @example\n * ```ts\n * let a: object;\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#object}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1017,7 +1171,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!NumberTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#number}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1085,7 +1239,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!OmitTypeSchema:interface",
-          "docComment": "/**\n * equivalent to PickType\n */\n",
+          "docComment": "/**\n * TypeScript Omit Type Omit some properties from a interface\n *\n * @example\n * ```ts\n * interface AAA {\n *     a: string,\n *     b: string,\n *     c: string\n * }\n *\n * // Equivalent to `{ c: string }`\n * type BBB = Omit<AAA, 'a' | 'b'>;\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1205,9 +1359,76 @@
           "extendsTokenRanges": []
         },
         {
+          "kind": "TypeAlias",
+          "canonicalReference": "tsbuffer-schema!Overwrite:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Overwrite<T, U> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends unknown ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T, "
+            },
+            {
+              "kind": "Reference",
+              "text": "Exclude",
+              "canonicalReference": "!Exclude:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof T, keyof U>> & U : never"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Overwrite",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "U",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!OverwriteTypeSchema:interface",
-          "docComment": "/**\n * equivalent to pick & overwrite\n */\n",
+          "docComment": "/**\n * TSBuffer Extended Type, which represents overwrite some properties from a interface.\n *\n * @example\n * ```ts\n * import { Overwrite } from 'tsbuffer-schema';\n *\n * interface AAA {\n *     a: string,\n *     b: string\n * }\n *\n * // Equivalent to `{ a: string, b: number, c: number }`\n * type BBB = Overwrite<AAA, {\n *     b: number,\n *     c: number\n * }>\n * ```\n *\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1321,7 +1542,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!PartialTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Partial Type\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1417,7 +1638,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!PickTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Pick Type\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1539,7 +1760,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!ReferenceTypeSchema:interface",
-          "docComment": "/**\n * 有namespace的情况\n *\n * import { MyNS } from './myns'; type MyType2 = MyNS.MyType;\n *\n * MyType2 ↓ importPath: './myns' targetName: 'MyNS.MyType'\n *\n * 查找引用时，如果targetName没有小数点，直接查Type；如果有小数点，则以小数点隔开查namespace，知道最后一位查Type\n */\n",
+          "docComment": "/**\n * Type Reference, infers that this type should be equivalent to target type.\n *\n * @remarks\n *\n * If target type is in a namespace, the schema should be like below.\n *\n * Type:\n * ```ts\n * import { SomeNS } from './some-ns';\n * type Reference = SomeNS.Target;\n * ```\n *\n * Schema:\n * ```json\n * {\n *     type: \"Reference\",\n *     target: \"./some-ns/SomeNS.Target\"\n * }\n * ```\n *\n * When parsing a type reference, if `target` includes point, namespace would be parsed by `target.split('.')`. If `target` doesn't include point, it would be treated as a type name.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1607,7 +1828,7 @@
         {
           "kind": "Enum",
           "canonicalReference": "tsbuffer-schema!SchemaType:enum",
-          "docComment": "",
+          "docComment": "/**\n * Enum for every possible `TSBufferSchema.type`\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -2063,7 +2284,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!StringTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * Basic String Type\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -2370,7 +2591,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!TupleTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Tuple Type It has less encoded size than `Array`.\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -2504,7 +2725,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "tsbuffer-schema!uint:type",
-          "docComment": "",
+          "docComment": "/**\n * Encoded as {@link https://developers.google.com/protocol-buffers/docs/encoding#varints | Varint}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -2529,7 +2750,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "tsbuffer-schema!UnionTypeSchema:interface",
-          "docComment": "",
+          "docComment": "/**\n * TypeScript Union Types, like `A | B`\n *\n * @example\n * ```ts\n * type X1 = A | B;\n * type X2 = A | null | undefined;\n * type Gender = 'Male' | 'Female';\n * ```\n *\n * @see\n *\n * {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types}\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

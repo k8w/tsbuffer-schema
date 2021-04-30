@@ -1,6 +1,6 @@
 {
   "name": "tsbuffer-schema",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "TSBuffer schema declarations",
   "main": "index.cjs",
   "exports": {
@@ -14,7 +14,7 @@
     "build": "npm run build:js && npm run build:dts && npm run build:doc && cp package.json LICENSE README.md dist/",
     "build:js": "rm -rf dist && npx rollup -c",
     "build:dts": "rm -rf lib && npx tsc && npx api-extractor run --local --verbose && node scripts/removePrivate.js && rm -rf lib",
-    "build:doc": "rm -rf docs/references && npx api-documenter markdown --input temp --output docs/references"
+    "build:doc": "rm -rf docs/api && npx api-documenter markdown --input temp --output docs/api"
   },
   "repository": {
     "type": "git",
@@ -36,16 +36,16 @@
     "encoding"
   ],
   "author": "k8w",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/k8w/tsbuffer-schema/issues"
   },
   "homepage": "https://github.com/k8w/tsbuffer#readme",
   "devDependencies": {
-    "rollup": "^2.42.3",
-    "@microsoft/api-documenter": "^7.12.14",
-    "@microsoft/api-extractor": "^7.13.2",
+    "@microsoft/api-documenter": "^7.13.5",
+    "@microsoft/api-extractor": "^7.15.0",
+    "rollup": "^2.46.0",
     "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   }
 }

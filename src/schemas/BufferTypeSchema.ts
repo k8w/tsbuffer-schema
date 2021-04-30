@@ -1,3 +1,12 @@
+/**
+ * Buffer Type, include `ArrayBuffer` and typed arrays (e.g. `Uint8Array`).
+ * 
+ * @example
+ * ```ts
+ * type A = ArrayBuffer;
+ * type B = Uint8Array;
+ * ```
+ */
 export interface BufferTypeSchema {
     type: 'Buffer';
     /**

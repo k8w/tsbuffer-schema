@@ -1,15 +1,37 @@
 import { InterfaceReference } from '../models/InterfaceReference';
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
+/**
+ * TypeScript Interface Type
+ * 
+ * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces}
+ * 
+ * @example
+ * ```ts
+ * interface AAA {
+ *     a: string,
+ *     b?: number[],
+ *     c: {
+ *         value: boolean
+ *     }
+ * }
+ * 
+ * // Index Signature
+ * interface BBB {
+ *     [key: string]: string;
+ * }
+ * ```
+ */
 export interface InterfaceTypeSchema {
     type: 'Interface';
 
-    /** 继承自哪个interface */
+    /** Extends which interface */
     extends?: {
         id: number,
         type: InterfaceReference
     }[],
 
+    /** Self properties (not include extended) */
     properties?: {
         id: number,
         name: string,
@@ -19,8 +41,8 @@ export interface InterfaceTypeSchema {
     }[];
 
     /**
-     * 索引签名
-     * 为空则代表没有
+     * Index Signature
+     * `undefined` represents no index signature, i.e. excess property is not allowed.
      * { [key: string]: xxx }
      */
     indexSignature?: {

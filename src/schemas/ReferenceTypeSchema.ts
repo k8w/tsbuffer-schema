@@ -1,14 +1,25 @@
 /**
- * 有namespace的情况
+ * Type Reference, infers that this type should be equivalent to target type.
  * 
- * import { MyNS } from './myns';
- * type MyType2 = MyNS.MyType;
+ * @remarks
+ * If target type is in a namespace, the schema should be like below.
  * 
- * MyType2 ↓
- * importPath: './myns'
- * targetName: 'MyNS.MyType'
+ * Type:
+ * ```ts
+ * import { SomeNS } from './some-ns';
+ * type Reference = SomeNS.Target;
+ * ```
  * 
- * 查找引用时，如果targetName没有小数点，直接查Type；如果有小数点，则以小数点隔开查namespace，知道最后一位查Type
+ * Schema:
+ * ```json
+ * {
+ *     type: "Reference",
+ *     target: "./some-ns/SomeNS.Target"
+ * }
+ * ```
+ * 
+ * When parsing a type reference, if `target` includes point, namespace would be parsed by `target.split('.')`.
+ * If `target` doesn't include point, it would be treated as a type name.
  */
 export interface ReferenceTypeSchema {
     type: 'Reference';

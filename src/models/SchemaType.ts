@@ -1,3 +1,6 @@
+/**
+ * Enum for every possible `TSBufferSchema.type`
+ */
 export enum SchemaType {
     // #region 确定的TypeScript的类型
     Boolean = 'Boolean',

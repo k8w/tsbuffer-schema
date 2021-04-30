@@ -1,25 +1,25 @@
 // Schemas
-export { AnyTypeSchema } from "./schemas/AnyTypeSchema";
-export { ArrayTypeSchema } from "./schemas/ArrayTypeSchema";
-export { BooleanTypeSchema } from "./schemas/BooleanTypeSchema";
-export { BufferTypeSchema } from "./schemas/BufferTypeSchema";
-export { DateTypeSchema } from "./schemas/DateTypeSchema";
-export { EnumTypeSchema } from "./schemas/EnumTypeSchema";
-export { IndexedAccessTypeSchema } from "./schemas/IndexedAccessTypeSchema";
-export { InterfaceTypeSchema } from "./schemas/InterfaceTypeSchema";
-export { IntersectionTypeSchema } from "./schemas/IntersectionTypeSchema";
-export { LiteralTypeSchema } from "./schemas/LiteralTypeSchema";
-export { NonNullableTypeSchema } from "./schemas/NonNullableTypeSchema";
-export { NonPrimitiveTypeSchema } from "./schemas/NonPrimitiveTypeSchema";
-export { NumberTypeSchema, int, uint, double, bigint64, biguint64 } from "./schemas/NumberTypeSchema";
-export { OmitTypeSchema } from "./schemas/OmitTypeSchema";
-export { OverwriteTypeSchema } from "./schemas/OverwriteTypeSchema";
-export { PartialTypeSchema } from "./schemas/PartialTypeSchema";
-export { PickTypeSchema } from "./schemas/PickTypeSchema";
-export { ReferenceTypeSchema } from "./schemas/ReferenceTypeSchema";
-export { StringTypeSchema } from "./schemas/StringTypeSchema";
-export { TupleTypeSchema } from "./schemas/TupleTypeSchema";
-export { UnionTypeSchema } from "./schemas/UnionTypeSchema";
+export * from "./schemas/AnyTypeSchema";
+export * from "./schemas/ArrayTypeSchema";
+export * from "./schemas/BooleanTypeSchema";
+export * from "./schemas/BufferTypeSchema";
+export * from "./schemas/DateTypeSchema";
+export * from "./schemas/EnumTypeSchema";
+export * from "./schemas/IndexedAccessTypeSchema";
+export * from "./schemas/InterfaceTypeSchema";
+export * from "./schemas/IntersectionTypeSchema";
+export * from "./schemas/LiteralTypeSchema";
+export * from "./schemas/NonNullableTypeSchema";
+export * from "./schemas/NonPrimitiveTypeSchema";
+export * from "./schemas/NumberTypeSchema";
+export * from "./schemas/OmitTypeSchema";
+export * from "./schemas/OverwriteTypeSchema";
+export * from "./schemas/PartialTypeSchema";
+export * from "./schemas/PickTypeSchema";
+export * from "./schemas/ReferenceTypeSchema";
+export * from "./schemas/StringTypeSchema";
+export * from "./schemas/TupleTypeSchema";
+export * from "./schemas/UnionTypeSchema";
 
 // Others
 export { InterfaceReference } from "./models/InterfaceReference";
@@ -27,3 +27,5 @@ export { SchemaType } from "./models/SchemaType";
 export { TSBufferProto } from "./models/TSBufferProto";
 export { TSBufferSchema } from "./models/TSBufferSchema";
 export { TypeReference } from "./models/TypeReference";
+
+export type Overwrite<T, U> = T extends unknown ? Pick<T, Exclude<keyof T, keyof U>> & U : never;

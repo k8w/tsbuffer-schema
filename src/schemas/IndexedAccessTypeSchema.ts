@@ -2,9 +2,18 @@ import { InterfaceReference } from '../models/InterfaceReference';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 
 /**
- * Reference like XXX['XX']['XX']
- * 注意 A['b' | 'c']不是IndexedAccessType，它们应该作为一个 UnionType被识别
- * 应该等价于 A['b'] | A['c']
+ * TypeScript Indexed Access Type
+ * 
+ * @remarks 
+ * `XXX['a' | 'b']` is not a `IndexedAccessType`, which should be a `{@link UnionType}`. 
+ * (Equivalent to `XXX['a'] | XXX['b']`)
+ * 
+ * @see {@link https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html}
+ * 
+ * @example
+ * ```ts
+ * type A = SomeInterface['XXX']
+ * ```
  */
 export interface IndexedAccessTypeSchema {
     type: 'IndexedAccess';
