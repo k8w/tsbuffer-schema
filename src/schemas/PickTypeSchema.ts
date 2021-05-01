@@ -4,8 +4,9 @@ import { IntersectionTypeSchema } from './IntersectionTypeSchema';
 import { UnionTypeSchema } from './UnionTypeSchema';
 
 /**
- * TypeScript Pick Type
- * @see {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys}
+ * TypeScript `Pick<Type>`
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys}
  */
 export interface PickTypeSchema {
     type: 'Pick';

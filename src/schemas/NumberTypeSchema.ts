@@ -1,12 +1,17 @@
 /**
- * {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#number}
+ * Primitive `number` type, with specific scalar type (like `int`, `uint`)
+ * 
+ * @remarks
+ * See: {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#number}
+ * 
+ * Encoding:<br/>
+ * - {@link https://developers.google.com/protocol-buffers/docs/encoding#varints | Varint}: `int`, `uint`<br/>
+ * - Fixed 64 bit: `double`, `bigint`, `bigint64`, `biguint64`
  */
 export interface NumberTypeSchema {
     type: 'Number';
-    /** 
-     * 默认为float64
-     * bigint 默认对应uint64
-     * 只有 x64 允许bigint
+    /**
+     * @defaultValue 'double'
      */
     scalarType?: 'int' | 'uint' | 'bigint' | 'bigint64' | 'biguint64' | 'double';
 }

@@ -1,9 +1,10 @@
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
- * TypeScript Intersection Type, like `A & B`
+ * TypeScript intersection type, like `A & B`
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types}
  * 
  * @example
  * ```ts

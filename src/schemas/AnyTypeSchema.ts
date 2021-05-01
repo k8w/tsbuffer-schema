@@ -1,7 +1,8 @@
 /** 
- * TypeScript Any Type
+ * TypeScript `any` type
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any}
  * 
  * @example
  * ```ts

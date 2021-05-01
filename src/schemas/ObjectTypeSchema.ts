@@ -1,9 +1,12 @@
 /**
- * TypeScript Object Type
- * Represents anything that is not `number`, `string`, `boolean`, `bigint`, `symbol`, `null`, or `undefined`.
- * NOTICE: Both `Object` and `Array` is valid.
+ * TypeScript `object` type
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#object}
+ * Represents anything that is not `number`, `string`, `boolean`, `bigint`, `symbol`, `null`, or `undefined`.
+ * 
+ * @remarks
+ * See: {@link https://www.typescriptlang.org/docs/handbook/basic-types.html#object}
+ * 
+ * NOTICE: Both `Object` and `Array` is valid.
  * 
  * @example
  * ```ts

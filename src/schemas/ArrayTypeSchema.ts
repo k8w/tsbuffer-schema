@@ -1,9 +1,10 @@
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
- * TypeScript Array Type
+ * TypeScript `Array` type
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays}
  * 
  * @example
  * ```ts

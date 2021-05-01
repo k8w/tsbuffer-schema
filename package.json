@@ -1,6 +1,6 @@
 {
   "name": "tsbuffer-schema",
-  "version": "2.0.1-dev.0",
+  "version": "2.0.1",
   "description": "TSBuffer schema declarations",
   "main": "index.cjs",
   "exports": {
@@ -11,7 +11,7 @@
   "typings": "index.d.ts",
   "scripts": {
     "bp": "tsc --noEmit && npm version patch && npm run build && cd dist && npm publish && cd ..",
-    "build": "npm run build:js && npm run build:dts && cp package.json LICENSE README.md dist/",
+    "build": "npm run build:js && npm run build:dts && npm run build:doc && cp package.json LICENSE README.md dist/",
     "build:js": "rm -rf dist && npx rollup -c",
     "build:dts": "rm -rf lib && npx tsc && npx api-extractor run --local --verbose && node scripts/removePrivate.js && rm -rf lib",
     "build:doc": "rm -rf docs/api && npx api-documenter markdown --input temp --output docs/api"

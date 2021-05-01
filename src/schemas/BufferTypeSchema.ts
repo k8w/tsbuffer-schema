@@ -1,5 +1,5 @@
 /**
- * Buffer Type, include `ArrayBuffer` and typed arrays (e.g. `Uint8Array`).
+ * Buffer type, include `ArrayBuffer` and typed arrays (e.g. `Uint8Array`, `Int32Array`...).
  * 
  * @example
  * ```ts

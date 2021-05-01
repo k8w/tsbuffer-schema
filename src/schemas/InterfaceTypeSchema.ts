@@ -2,9 +2,10 @@ import { InterfaceReference } from '../models/InterfaceReference';
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
- * TypeScript Interface Type
+ * TypeScript `interface`
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces}
  * 
  * @example
  * ```ts

@@ -1,5 +1,5 @@
 /**
- * JavaScript Date Type
+ * JavaScript `Date` type
  * 
  * @example
  * ```ts

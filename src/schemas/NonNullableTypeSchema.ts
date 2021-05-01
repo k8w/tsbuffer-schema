@@ -1,7 +1,8 @@
 /** 
- * TypeScript NonNullable Type
+ * TypeScript `NonNullable<Type>`
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype}
+ * @remarks
+ * See: {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype}
  * 
  * @example
  * ```ts

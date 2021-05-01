@@ -3,7 +3,8 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
 /**
  * TypeScript Union Types, like `A | B`
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types}
+ * @remarks
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types}
  * 
  * @example
  * ```ts

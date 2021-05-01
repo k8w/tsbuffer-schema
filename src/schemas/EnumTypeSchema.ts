@@ -1,7 +1,8 @@
 /**
- * TypeScript Enum Type
+ * TypeScript `enum` type
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#enums}
+ * @remarks
+ * See: {@link https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#enums}
  * 
  * @example
  * ```ts

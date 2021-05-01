@@ -2,7 +2,7 @@ import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { InterfaceReference } from '../models/InterfaceReference';
 
 /**
- * TSBuffer Extended Type, which represents overwrite some properties from a interface.
+ * TSBuffer utility type, which represents overwrite some properties from a interface.
  * 
  * @example
  * ```ts

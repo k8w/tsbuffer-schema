@@ -9,4 +9,3 @@
 
 ## API
 See [API Reference](./docs/api/tsbuffer-schema.md).
-See [API Reference](./docs/typedoc/index.html).

@@ -1,5 +1,5 @@
 /**
- * TypeScript Boolean Type
+ * Primitive `boolean` type
  * 
  * @example
  * ```ts

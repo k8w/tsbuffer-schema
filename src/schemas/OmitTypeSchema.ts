@@ -1,13 +1,14 @@
-import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { InterfaceReference } from '../models/InterfaceReference';
+import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { IntersectionTypeSchema } from './IntersectionTypeSchema';
 import { UnionTypeSchema } from './UnionTypeSchema';
 
 /** 
- * TypeScript Omit Type
- * Omit some properties from a interface
+ * TypeScript `Omit` type,
+ * represents omit some properties from a interface.
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys}
  * 
  * @example
  * ```ts

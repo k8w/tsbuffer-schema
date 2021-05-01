@@ -1,9 +1,11 @@
 /**
- * TypeScript Literal Type
- * Literal Type is very useful to reduce encoded buffer size.
- * No matter how long the literal is, the encoded buffer is always less than 1 byte.
+ * TypeScript literal type
  * 
- * @see {@link https://www.typescriptlang.org/docs/handbook/literal-types.html}
+ * @remarks 
+ * See: {@link https://www.typescriptlang.org/docs/handbook/literal-types.html}
+ * 
+ * Literal type is very useful to reduce encoded buffer size.
+ * No matter how long the literal is, the encoded buffer is always less than 1 byte.
  * 
  * @example
  * ```ts
