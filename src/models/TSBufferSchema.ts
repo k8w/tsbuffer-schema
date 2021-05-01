@@ -1,6 +1,9 @@
-import { AnyTypeSchema, ArrayTypeSchema, BooleanTypeSchema, BufferTypeSchema, DateTypeSchema, EnumTypeSchema, IndexedAccessTypeSchema, InterfaceTypeSchema, IntersectionTypeSchema, LiteralTypeSchema, NonPrimitiveTypeSchema, NumberTypeSchema, OmitTypeSchema, OverwriteTypeSchema, PartialTypeSchema, PickTypeSchema, ReferenceTypeSchema, StringTypeSchema, TupleTypeSchema, UnionTypeSchema } from "../index";
+import { AnyTypeSchema, ArrayTypeSchema, BooleanTypeSchema, BufferTypeSchema, DateTypeSchema, EnumTypeSchema, IndexedAccessTypeSchema, InterfaceTypeSchema, IntersectionTypeSchema, LiteralTypeSchema, ObjectTypeSchema, NumberTypeSchema, OmitTypeSchema, OverwriteTypeSchema, PartialTypeSchema, PickTypeSchema, ReferenceTypeSchema, StringTypeSchema, TupleTypeSchema, UnionTypeSchema } from "../index";
 import { NonNullableTypeSchema } from "../schemas/NonNullableTypeSchema";
 
+/**
+ * Schema for TypeScript Types
+ */
 export type TSBufferSchema = BooleanTypeSchema
 	| NumberTypeSchema
 	| StringTypeSchema
@@ -9,7 +12,7 @@ export type TSBufferSchema = BooleanTypeSchema
 	| EnumTypeSchema
 	| AnyTypeSchema
 	| LiteralTypeSchema
-	| NonPrimitiveTypeSchema
+	| ObjectTypeSchema
 	| InterfaceTypeSchema
 	| BufferTypeSchema
 	| IndexedAccessTypeSchema

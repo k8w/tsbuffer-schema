@@ -1,13 +1,31 @@
 import { TSBufferSchema } from "./TSBufferSchema";
 
+/**
+ * Collection of a group of `TSBufferSchema`
+ */
 export interface TSBufferProto {
     /**
-     * 于baseDir的文件的相对路径 不带扩展名的
-     * 例如 a/b/c/index.ts 的key会是 a/b/c/index 不会是 a/b/c
-     * 路径Key/SymbolName
-     * 例子：
-     *   a/b/c/index.ts 内的 Test类型，其SchemaID为 a/b/c/index/Test
-     *   a/b/c/index.ts 内的 NS命名空间下的Test类型，其SchemaID为 a/b/c/index/NS.Test
+     * [schemaId: string]: `{relativePath}/{namespace}/{typeName}`.
+     * `path` is relative path to `baseDir`, without extension name.
+     * 
+     * @example
+     * a/b/c/index.ts:
+     * ```ts
+     * export interface Test {
+     *     a: string;
+     * }
+     * ```
+     * schemaId for `Test` is `a/b/c/index/Test`
+     * 
+     * a/b/c/index.ts (with namespace)
+     * ```ts
+     * export namespace NS {
+     *     export interface Test {
+     *         value: string;
+     *     }
+     * }
+     * ```
+     * schemaId for `NS.Test` is `a/b/c/index/NS/Test`
      */
     [schemaId: string]: TSBufferSchema;
 }

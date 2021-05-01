@@ -11,7 +11,7 @@ export enum SchemaType {
     Enum = 'Enum',
     Any = 'Any',
     Literal = 'Literal',
-    NonPrimitive = 'NonPrimitive',
+    Object = 'Object',
     Interface = 'Interface',
     Buffer = 'Buffer',
     IndexedAccess = 'IndexedAccess',

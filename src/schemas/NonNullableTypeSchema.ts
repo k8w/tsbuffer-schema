@@ -1,5 +1,5 @@
 /** 
- * TypeScript NonNullable<T>
+ * TypeScript NonNullable Type
  * 
  * @see {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype}
  * 
