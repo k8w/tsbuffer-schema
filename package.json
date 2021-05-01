@@ -1,6 +1,6 @@
 {
   "name": "tsbuffer-schema",
-  "version": "2.0.1",
+  "version": "2.0.1-dev.0",
   "description": "TSBuffer schema declarations",
   "main": "index.cjs",
   "exports": {
