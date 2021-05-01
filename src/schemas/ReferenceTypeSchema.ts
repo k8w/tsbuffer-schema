@@ -24,6 +24,6 @@
 export interface ReferenceTypeSchema {
     type: 'Reference';
 
-    /** 引用目标的SchemaID */
+    /** SchemaID of reference target */
     target: string;
 }
