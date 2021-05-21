@@ -4,10 +4,10 @@
 
 ## NonNullableTypeSchema.target property
 
-引用目标的SchemaID
+引用目标
 
 <b>Signature:</b>
 
 ```typescript
-target: string;
+target: TypeReference;
 ```

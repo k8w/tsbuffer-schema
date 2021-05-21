@@ -1,3 +1,5 @@
+import { TypeReference } from "../models/TypeReference";
+
 /** 
  * TypeScript `NonNullable<Type>`
  * 
@@ -11,6 +13,6 @@
  */
 export interface NonNullableTypeSchema {
     type: 'NonNullable';
-    /** 引用目标的SchemaID */
-    target: string;
+    /** 引用目标 */
+    target: TypeReference;
 }

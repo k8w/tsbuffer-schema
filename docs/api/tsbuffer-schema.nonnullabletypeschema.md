@@ -28,6 +28,6 @@ type A = NonNullable<B>;
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [target](./tsbuffer-schema.nonnullabletypeschema.target.md) | string | 引用目标的SchemaID |
+|  [target](./tsbuffer-schema.nonnullabletypeschema.target.md) | [TypeReference](./tsbuffer-schema.typereference.md) | 引用目标 |
 |  [type](./tsbuffer-schema.nonnullabletypeschema.type.md) | 'NonNullable' |  |
 
