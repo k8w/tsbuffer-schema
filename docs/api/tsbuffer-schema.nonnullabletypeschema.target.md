@@ -4,10 +4,10 @@
 
 ## NonNullableTypeSchema.target property
 
-引用目标
+引用目标l
 
 <b>Signature:</b>
 
 ```typescript
-target: TypeReference;
+target: TSBufferSchema;
 ```

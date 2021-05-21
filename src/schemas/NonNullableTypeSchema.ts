@@ -1,4 +1,4 @@
-import { TypeReference } from "../models/TypeReference";
+import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /** 
  * TypeScript `NonNullable<Type>`
@@ -13,6 +13,6 @@ import { TypeReference } from "../models/TypeReference";
  */
 export interface NonNullableTypeSchema {
     type: 'NonNullable';
-    /** 引用目标 */
-    target: TypeReference;
+    /** 引用目标l */
+    target: TSBufferSchema;
 }
