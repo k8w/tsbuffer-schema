@@ -44,7 +44,7 @@ export interface InterfaceTypeSchema {
     /**
      * Index Signature
      * `undefined` represents no index signature, i.e. excess property is not allowed.
-     * { [key: string]: xxx }
+     * \{ [key: string]: xxx \}
      */
     indexSignature?: {
         keyType: 'String' | 'Number',
