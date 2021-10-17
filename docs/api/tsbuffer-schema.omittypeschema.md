@@ -28,7 +28,6 @@ interface AAA {
 
 // Equivalent to `{ c: string }`
 type BBB = Omit<AAA, 'a' | 'b'>;
-
 ```
 
 ## Properties

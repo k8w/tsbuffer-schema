@@ -25,7 +25,6 @@ NOTICE: Both `Object` and `Array` is valid.
 
 ```ts
 let a: object;
-
 ```
 
 ## Properties

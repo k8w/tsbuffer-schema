@@ -21,7 +21,6 @@ See: [https://www.typescriptlang.org/docs/handbook/utility-types.html\#nonnullab
 
 ```ts
 type A = NonNullable<B>;
-
 ```
 
 ## Properties

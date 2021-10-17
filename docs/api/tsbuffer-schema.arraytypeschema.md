@@ -22,7 +22,6 @@ See: [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html\#arrays
 ```ts
 type A = string[];
 type B = Array<A>;
-
 ```
 
 ## Properties

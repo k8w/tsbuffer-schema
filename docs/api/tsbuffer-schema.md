@@ -18,6 +18,7 @@
 |  [ArrayTypeSchema](./tsbuffer-schema.arraytypeschema.md) | TypeScript <code>Array</code> type |
 |  [BooleanTypeSchema](./tsbuffer-schema.booleantypeschema.md) | Primitive <code>boolean</code> type |
 |  [BufferTypeSchema](./tsbuffer-schema.buffertypeschema.md) | Buffer type, include <code>ArrayBuffer</code> and typed arrays (e.g. <code>Uint8Array</code>, <code>Int32Array</code>...). |
+|  [CustomTypeSchema](./tsbuffer-schema.customtypeschema.md) | Custom type, used for custom validate / encode / decode methods. |
 |  [DateTypeSchema](./tsbuffer-schema.datetypeschema.md) | JavaScript <code>Date</code> type |
 |  [EnumTypeSchema](./tsbuffer-schema.enumtypeschema.md) | TypeScript <code>enum</code> type |
 |  [IndexedAccessTypeSchema](./tsbuffer-schema.indexedaccesstypeschema.md) | TypeScript indexed access type |

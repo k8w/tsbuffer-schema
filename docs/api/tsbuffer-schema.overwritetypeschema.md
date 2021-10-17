@@ -28,7 +28,6 @@ type BBB = Overwrite<AAA, {
     b: number,
     c: number
 }>
-
 ```
 
 ## Properties

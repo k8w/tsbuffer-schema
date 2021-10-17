@@ -21,7 +21,6 @@ See: [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html\#any](h
 
 ```ts
 type XXX = any;
-
 ```
 
 ## Properties

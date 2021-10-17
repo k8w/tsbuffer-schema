@@ -9,6 +9,7 @@ export * from "./schemas/AnyTypeSchema";
 export * from "./schemas/ArrayTypeSchema";
 export * from "./schemas/BooleanTypeSchema";
 export * from "./schemas/BufferTypeSchema";
+export * from "./schemas/CustomTypeSchema";
 export * from "./schemas/DateTypeSchema";
 export * from "./schemas/EnumTypeSchema";
 export * from "./schemas/IndexedAccessTypeSchema";

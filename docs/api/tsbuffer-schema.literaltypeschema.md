@@ -26,7 +26,6 @@ type A = 'XXXX';
 
 // Always appears with UnionType, like:
 type Gender = 'Male' | 'Female';
-
 ```
 
 ## Properties
