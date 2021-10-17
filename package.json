@@ -1,13 +1,12 @@
 {
   "name": "tsbuffer-schema",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "TSBuffer schema declarations",
   "main": "index.js",
   "exports": {
     "require": "./index.js",
     "import": "./index.mjs"
   },
-  "type": "module",
   "typings": "index.d.ts",
   "scripts": {
     "bp": "tsc --noEmit && npm version patch && npm run build && cd dist && npm publish && cd ..",
