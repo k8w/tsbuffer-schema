@@ -2,23 +2,12 @@
 
 [Home](./index.md) &gt; [tsbuffer-schema](./tsbuffer-schema.md) &gt; [CustomTypeSchema](./tsbuffer-schema.customtypeschema.md) &gt; [encode](./tsbuffer-schema.customtypeschema.encode.md)
 
-## CustomTypeSchema.encode() method
+## CustomTypeSchema.encode property
 
 Custom encode method. It is ensured that the method is called after validated successfully.
 
 <b>Signature:</b>
 
 ```typescript
-encode(value: any): Uint8Array;
+encode?: (value: any) => Uint8Array;
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | any |  |
-
-<b>Returns:</b>
-
-Uint8Array
-

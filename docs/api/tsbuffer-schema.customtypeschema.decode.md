@@ -2,23 +2,12 @@
 
 [Home](./index.md) &gt; [tsbuffer-schema](./tsbuffer-schema.md) &gt; [CustomTypeSchema](./tsbuffer-schema.customtypeschema.md) &gt; [decode](./tsbuffer-schema.customtypeschema.decode.md)
 
-## CustomTypeSchema.decode() method
+## CustomTypeSchema.decode property
 
 Custom decode method. After decode, it would validate again.
 
 <b>Signature:</b>
 
 ```typescript
-decode(buf: Uint8Array): any;
+decode?: (buf: Uint8Array) => any;
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  buf | Uint8Array |  |
-
-<b>Returns:</b>
-
-any
-

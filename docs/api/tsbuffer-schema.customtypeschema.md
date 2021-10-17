@@ -16,13 +16,8 @@ export interface CustomTypeSchema
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [decode?](./tsbuffer-schema.customtypeschema.decode.md) | (buf: Uint8Array) =&gt; any | <i>(Optional)</i> Custom decode method. After decode, it would validate again. |
+|  [encode?](./tsbuffer-schema.customtypeschema.encode.md) | (value: any) =&gt; Uint8Array | <i>(Optional)</i> Custom encode method. It is ensured that the method is called after validated successfully. |
 |  [type](./tsbuffer-schema.customtypeschema.type.md) | 'Custom' |  |
-
-## Methods
-
-|  Method | Description |
-|  --- | --- |
-|  [decode(buf)](./tsbuffer-schema.customtypeschema.decode.md) | Custom decode method. After decode, it would validate again. |
-|  [encode(value)](./tsbuffer-schema.customtypeschema.encode.md) | Custom encode method. It is ensured that the method is called after validated successfully. |
-|  [validate(value)](./tsbuffer-schema.customtypeschema.validate.md) | Custom validate method |
+|  [validate](./tsbuffer-schema.customtypeschema.validate.md) | (value: any) =&gt; { isSucc: true; errMsg?: undefined; } \| { isSucc: false; errMsg: string; } | Custom validate method |
 
