@@ -28,4 +28,6 @@ export enum SchemaType {
     Omit = 'Omit',
     Overwrite = 'Overwrite',
     // #endregion
+
+    Custom = 'Custom'
 }

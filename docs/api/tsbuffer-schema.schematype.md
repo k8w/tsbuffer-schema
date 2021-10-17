@@ -20,6 +20,7 @@ export declare enum SchemaType
 |  Array | <code>&quot;Array&quot;</code> |  |
 |  Boolean | <code>&quot;Boolean&quot;</code> |  |
 |  Buffer | <code>&quot;Buffer&quot;</code> |  |
+|  Custom | <code>&quot;Custom&quot;</code> |  |
 |  Date | <code>&quot;Date&quot;</code> |  |
 |  Enum | <code>&quot;Enum&quot;</code> |  |
 |  IndexedAccess | <code>&quot;IndexedAccess&quot;</code> |  |
