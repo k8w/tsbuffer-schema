@@ -9,5 +9,5 @@ Custom decodeJSON method. After decode, it would validate again.
 <b>Signature:</b>
 
 ```typescript
-decodeJSON?: (json: Uint8Array) => any;
+decodeJSON?: (json: any) => any;
 ```

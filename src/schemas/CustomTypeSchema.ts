@@ -35,5 +35,5 @@ export interface CustomTypeSchema {
      * Custom decodeJSON method.
      * After decode, it would validate again.
      */
-    decodeJSON?: (json: Uint8Array) => any;
+    decodeJSON?: (json: any) => any;
 }
