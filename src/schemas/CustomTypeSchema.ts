@@ -24,4 +24,16 @@ export interface CustomTypeSchema {
      * After decode, it would validate again.
      */
     decode?: (buf: Uint8Array) => any;
+
+    /** 
+     * Custom encodeJSON method.
+     * It is ensured that the method is called after validated successfully.
+     */
+    encodeJSON?: (value: any) => any;
+
+    /**
+     * Custom decodeJSON method.
+     * After decode, it would validate again.
+     */
+    decodeJSON?: (json: Uint8Array) => any;
 }
