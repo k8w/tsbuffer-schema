@@ -27,5 +27,5 @@ export interface TSBufferProto {
      * ```
      * schemaId for `NS.Test` is `a/b/c/index/NS/Test`
      */
-    [schemaId: string]: TSBufferSchema & { comment?: string };
+    [schemaId: string]: TSBufferSchema;
 }

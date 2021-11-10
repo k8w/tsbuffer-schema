@@ -5,7 +5,7 @@ import { NonNullableTypeSchema } from "../schemas/NonNullableTypeSchema";
 /**
  * Schema for TypeScript Types
  */
-export type TSBufferSchema = BooleanTypeSchema
+export type TSBufferSchema = (BooleanTypeSchema
 	| NumberTypeSchema
 	| StringTypeSchema
 	| ArrayTypeSchema
@@ -26,4 +26,5 @@ export type TSBufferSchema = BooleanTypeSchema
 	| OverwriteTypeSchema
 	| NonNullableTypeSchema
 	| DateTypeSchema
-	| CustomTypeSchema;
+	| CustomTypeSchema)
+	& { comment?: string };
