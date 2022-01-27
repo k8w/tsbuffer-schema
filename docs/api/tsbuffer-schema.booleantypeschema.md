@@ -17,6 +17,7 @@ export interface BooleanTypeSchema
 
 ```ts
 type A = boolean;
+
 ```
 
 ## Properties

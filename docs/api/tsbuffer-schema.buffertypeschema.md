@@ -18,6 +18,7 @@ export interface BufferTypeSchema
 ```ts
 type A = ArrayBuffer;
 type B = Uint8Array;
+
 ```
 
 ## Properties

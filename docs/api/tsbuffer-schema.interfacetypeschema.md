@@ -32,6 +32,7 @@ interface AAA {
 interface BBB {
     [key: string]: string;
 }
+
 ```
 
 ## Properties

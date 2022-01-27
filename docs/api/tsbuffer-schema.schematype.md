@@ -26,6 +26,7 @@ export declare enum SchemaType
 |  IndexedAccess | <code>&quot;IndexedAccess&quot;</code> |  |
 |  Interface | <code>&quot;Interface&quot;</code> |  |
 |  Intersection | <code>&quot;Intersection&quot;</code> |  |
+|  Keyof | <code>&quot;Keyof&quot;</code> |  |
 |  Literal | <code>&quot;Literal&quot;</code> |  |
 |  NonNullable | <code>&quot;NonNullable&quot;</code> |  |
 |  Number | <code>&quot;Number&quot;</code> |  |

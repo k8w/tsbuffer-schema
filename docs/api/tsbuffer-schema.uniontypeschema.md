@@ -23,6 +23,7 @@ See: [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html\#union-
 type X1 = A | B;
 type X2 = A | null | undefined;
 type Gender = 'Male' | 'Female';
+
 ```
 
 ## Properties

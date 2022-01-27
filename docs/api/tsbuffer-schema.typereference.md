@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-export declare type TypeReference = ReferenceTypeSchema | IndexedAccessTypeSchema;
+export declare type TypeReference = ReferenceTypeSchema | IndexedAccessTypeSchema | KeyofTypeSchema;
 ```
 <b>References:</b> [ReferenceTypeSchema](./tsbuffer-schema.referencetypeschema.md)<!-- -->, [IndexedAccessTypeSchema](./tsbuffer-schema.indexedaccesstypeschema.md)
 

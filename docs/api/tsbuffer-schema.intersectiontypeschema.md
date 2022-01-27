@@ -22,6 +22,7 @@ See: [https://www.typescriptlang.org/docs/handbook/2/objects.html\#intersection-
 ```ts
 type X1 = A & B;
 type X2 = A & (B | C);
+
 ```
 
 ## Properties

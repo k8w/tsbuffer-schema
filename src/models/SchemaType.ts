@@ -16,6 +16,7 @@ export enum SchemaType {
     Buffer = 'Buffer',
     IndexedAccess = 'IndexedAccess',
     Reference = 'Reference',
+    Keyof = 'Keyof',
     Union = 'Union',
     Intersection = 'Intersection',
     NonNullable = 'NonNullable',

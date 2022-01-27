@@ -9,7 +9,7 @@ Schema for TypeScript Types
 <b>Signature:</b>
 
 ```typescript
-export declare type TSBufferSchema = (BooleanTypeSchema | NumberTypeSchema | StringTypeSchema | ArrayTypeSchema | TupleTypeSchema | EnumTypeSchema | AnyTypeSchema | LiteralTypeSchema | ObjectTypeSchema | InterfaceTypeSchema | BufferTypeSchema | IndexedAccessTypeSchema | ReferenceTypeSchema | UnionTypeSchema | IntersectionTypeSchema | PickTypeSchema | PartialTypeSchema | OmitTypeSchema | OverwriteTypeSchema | NonNullableTypeSchema | DateTypeSchema | CustomTypeSchema) & {
+export declare type TSBufferSchema = (BooleanTypeSchema | NumberTypeSchema | StringTypeSchema | ArrayTypeSchema | TupleTypeSchema | EnumTypeSchema | AnyTypeSchema | LiteralTypeSchema | ObjectTypeSchema | InterfaceTypeSchema | BufferTypeSchema | IndexedAccessTypeSchema | ReferenceTypeSchema | KeyofTypeSchema | UnionTypeSchema | IntersectionTypeSchema | PickTypeSchema | PartialTypeSchema | OmitTypeSchema | OverwriteTypeSchema | NonNullableTypeSchema | DateTypeSchema | CustomTypeSchema) & {
     comment?: string;
 };
 ```

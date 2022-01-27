@@ -23,6 +23,7 @@ export interface IndexedAccessTypeSchema
 
 ```ts
 type A = SomeInterface['XXX']
+
 ```
 
 ## Properties

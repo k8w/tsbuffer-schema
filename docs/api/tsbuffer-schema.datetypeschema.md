@@ -17,6 +17,7 @@ export interface DateTypeSchema
 
 ```ts
 type A = Date;
+
 ```
 
 ## Properties

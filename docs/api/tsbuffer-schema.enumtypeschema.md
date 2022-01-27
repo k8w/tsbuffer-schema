@@ -30,6 +30,7 @@ enum Status {
     Normal = 'Normal',
     Expired = 'Expired'
 }
+
 ```
 
 ## Properties
