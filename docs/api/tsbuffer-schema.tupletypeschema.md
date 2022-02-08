@@ -24,5 +24,5 @@ See: [https://www.typescriptlang.org/docs/handbook/2/objects.html\#tuple-types](
 |  --- | --- | --- |
 |  [elementTypes](./tsbuffer-schema.tupletypeschema.elementtypes.md) | [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md)<!-- -->\[\] |  |
 |  [optionalStartIndex?](./tsbuffer-schema.tupletypeschema.optionalstartindex.md) | number | <i>(Optional)</i> |
-|  [type](./tsbuffer-schema.tupletypeschema.type.md) | 'Tuple' |  |
+|  [type](./tsbuffer-schema.tupletypeschema.type.md) | [SchemaType.Tuple](./tsbuffer-schema.schematype.tuple.md) |  |
 

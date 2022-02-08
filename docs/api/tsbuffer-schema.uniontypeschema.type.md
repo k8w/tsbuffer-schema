@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: 'Union';
+type: SchemaType.Union;
 ```

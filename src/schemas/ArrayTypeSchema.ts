@@ -1,3 +1,4 @@
+import { SchemaType } from "../models/SchemaType";
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
@@ -13,6 +14,6 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * ```
  */
 export interface ArrayTypeSchema {
-    type: 'Array';
+    type: SchemaType.Array;
     elementType: TSBufferSchema;
 }

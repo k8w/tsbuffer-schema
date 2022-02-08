@@ -24,5 +24,5 @@ type A = boolean;
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./tsbuffer-schema.booleantypeschema.type.md) | 'Boolean' |  |
+|  [type](./tsbuffer-schema.booleantypeschema.type.md) | [SchemaType.Boolean](./tsbuffer-schema.schematype.boolean.md) |  |
 

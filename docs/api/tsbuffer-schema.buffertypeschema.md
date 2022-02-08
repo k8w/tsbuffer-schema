@@ -26,5 +26,5 @@ type B = Uint8Array;
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [arrayType?](./tsbuffer-schema.buffertypeschema.arraytype.md) | 'Int8Array' \| 'Int16Array' \| 'Int32Array' \| 'BigInt64Array' \| 'Uint8Array' \| 'Uint16Array' \| 'Uint32Array' \| 'BigUint64Array' \| 'Float32Array' \| 'Float64Array' | <i>(Optional)</i> 有该字段，代表类型为该字段对应的TypedArray，否则该字段为ArrayBuffer |
-|  [type](./tsbuffer-schema.buffertypeschema.type.md) | 'Buffer' |  |
+|  [type](./tsbuffer-schema.buffertypeschema.type.md) | [SchemaType.Buffer](./tsbuffer-schema.schematype.buffer.md) |  |
 

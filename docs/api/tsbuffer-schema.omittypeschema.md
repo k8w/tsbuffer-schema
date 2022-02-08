@@ -37,5 +37,5 @@ type BBB = Omit<AAA, 'a' | 'b'>;
 |  --- | --- | --- |
 |  [keys](./tsbuffer-schema.omittypeschema.keys.md) | string\[\] |  |
 |  [target](./tsbuffer-schema.omittypeschema.target.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) \| [UnionTypeSchema](./tsbuffer-schema.uniontypeschema.md) \| [IntersectionTypeSchema](./tsbuffer-schema.intersectiontypeschema.md) |  |
-|  [type](./tsbuffer-schema.omittypeschema.type.md) | 'Omit' |  |
+|  [type](./tsbuffer-schema.omittypeschema.type.md) | [SchemaType.Omit](./tsbuffer-schema.schematype.omit.md) |  |
 

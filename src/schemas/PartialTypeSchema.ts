@@ -1,4 +1,5 @@
 import { InterfaceReference } from '../models/InterfaceReference';
+import { SchemaType } from '../models/SchemaType';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { IntersectionTypeSchema } from './IntersectionTypeSchema';
 import { UnionTypeSchema } from './UnionTypeSchema';
@@ -10,6 +11,6 @@ import { UnionTypeSchema } from './UnionTypeSchema';
  * See: {@link https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype}
  */
 export interface PartialTypeSchema {
-    type: 'Partial';
+    type: SchemaType.Partial;
     target: InterfaceTypeSchema | InterfaceReference | UnionTypeSchema | IntersectionTypeSchema;
 }

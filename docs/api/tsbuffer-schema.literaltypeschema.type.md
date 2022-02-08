@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: 'Literal';
+type: SchemaType.Literal;
 ```

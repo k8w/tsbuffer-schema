@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: 'Interface';
+type: SchemaType.Interface;
 ```

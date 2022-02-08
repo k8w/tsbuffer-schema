@@ -1,3 +1,4 @@
+import { SchemaType } from "../models/SchemaType";
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /** 
@@ -12,7 +13,7 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * ```
  */
 export interface NonNullableTypeSchema {
-    type: 'NonNullable';
+    type: SchemaType.NonNullable;
     /** 引用目标l */
     target: TSBufferSchema;
 }

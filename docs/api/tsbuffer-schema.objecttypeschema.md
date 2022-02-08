@@ -32,5 +32,5 @@ let a: object;
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./tsbuffer-schema.objecttypeschema.type.md) | 'Object' |  |
+|  [type](./tsbuffer-schema.objecttypeschema.type.md) | [SchemaType.Object](./tsbuffer-schema.schematype.object.md) |  |
 

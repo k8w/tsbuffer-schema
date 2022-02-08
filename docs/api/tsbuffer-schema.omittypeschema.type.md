@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: 'Omit';
+type: SchemaType.Omit;
 ```

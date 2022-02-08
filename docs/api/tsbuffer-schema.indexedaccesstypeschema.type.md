@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: 'IndexedAccess';
+type: SchemaType.IndexedAccess;
 ```

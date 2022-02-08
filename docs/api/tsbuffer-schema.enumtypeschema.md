@@ -38,5 +38,5 @@ enum Status {
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [members](./tsbuffer-schema.enumtypeschema.members.md) | { id: number; value: string \| number; }\[\] |  |
-|  [type](./tsbuffer-schema.enumtypeschema.type.md) | 'Enum' |  |
+|  [type](./tsbuffer-schema.enumtypeschema.type.md) | [SchemaType.Enum](./tsbuffer-schema.schematype.enum.md) |  |
 

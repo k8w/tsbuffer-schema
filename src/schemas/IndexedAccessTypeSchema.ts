@@ -1,4 +1,5 @@
 import { InterfaceReference } from '../models/InterfaceReference';
+import { SchemaType } from '../models/SchemaType';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 
 /**
@@ -16,7 +17,7 @@ import { InterfaceTypeSchema } from './InterfaceTypeSchema';
  * ```
  */
 export interface IndexedAccessTypeSchema {
-    type: 'IndexedAccess';
+    type: SchemaType.IndexedAccess;
     objectType: InterfaceTypeSchema | InterfaceReference;
     index: string;
 }

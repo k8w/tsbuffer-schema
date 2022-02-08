@@ -16,5 +16,5 @@ export interface StringTypeSchema
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./tsbuffer-schema.stringtypeschema.type.md) | 'String' |  |
+|  [type](./tsbuffer-schema.stringtypeschema.type.md) | [SchemaType.String](./tsbuffer-schema.schematype.string.md) |  |
 

@@ -1,3 +1,5 @@
+import { SchemaType } from "../models/SchemaType";
+
 /**
  * Buffer type, include `ArrayBuffer` and typed arrays (e.g. `Uint8Array`, `Int32Array`...).
  * 
@@ -8,7 +10,7 @@
  * ```
  */
 export interface BufferTypeSchema {
-    type: 'Buffer';
+    type: SchemaType.Buffer;
     /**
      * 有该字段，代表类型为该字段对应的TypedArray，否则该字段为ArrayBuffer
      */

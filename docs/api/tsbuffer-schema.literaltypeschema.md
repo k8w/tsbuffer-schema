@@ -34,5 +34,5 @@ type Gender = 'Male' | 'Female';
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [literal?](./tsbuffer-schema.literaltypeschema.literal.md) | string \| number \| boolean \| null \| undefined | <i>(Optional)</i> |
-|  [type](./tsbuffer-schema.literaltypeschema.type.md) | 'Literal' |  |
+|  [type](./tsbuffer-schema.literaltypeschema.type.md) | [SchemaType.Literal](./tsbuffer-schema.schematype.literal.md) |  |
 

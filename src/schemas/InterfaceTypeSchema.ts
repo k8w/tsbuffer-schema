@@ -1,4 +1,5 @@
 import { InterfaceReference } from '../models/InterfaceReference';
+import { SchemaType } from '../models/SchemaType';
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
@@ -24,7 +25,7 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * ```
  */
 export interface InterfaceTypeSchema {
-    type: 'Interface';
+    type: SchemaType.Interface;
 
     /** Extends which interface */
     extends?: {

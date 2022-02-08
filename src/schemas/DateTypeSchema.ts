@@ -1,3 +1,5 @@
+import { SchemaType } from "../models/SchemaType";
+
 /**
  * JavaScript `Date` type
  * 
@@ -7,5 +9,5 @@
  * ```
  */
 export interface DateTypeSchema {
-    type: 'Date';
+    type: SchemaType.Date;
 }

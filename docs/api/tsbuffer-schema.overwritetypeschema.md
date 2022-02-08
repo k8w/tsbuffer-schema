@@ -37,5 +37,5 @@ type BBB = Overwrite<AAA, {
 |  --- | --- | --- |
 |  [overwrite](./tsbuffer-schema.overwritetypeschema.overwrite.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) |  |
 |  [target](./tsbuffer-schema.overwritetypeschema.target.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) |  |
-|  [type](./tsbuffer-schema.overwritetypeschema.type.md) | 'Overwrite' |  |
+|  [type](./tsbuffer-schema.overwritetypeschema.type.md) | [SchemaType.Overwrite](./tsbuffer-schema.schematype.overwrite.md) |  |
 

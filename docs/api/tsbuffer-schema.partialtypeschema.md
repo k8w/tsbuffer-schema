@@ -21,5 +21,5 @@ See: [https://www.typescriptlang.org/docs/handbook/utility-types.html\#partialty
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [target](./tsbuffer-schema.partialtypeschema.target.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) \| [UnionTypeSchema](./tsbuffer-schema.uniontypeschema.md) \| [IntersectionTypeSchema](./tsbuffer-schema.intersectiontypeschema.md) |  |
-|  [type](./tsbuffer-schema.partialtypeschema.type.md) | 'Partial' |  |
+|  [type](./tsbuffer-schema.partialtypeschema.type.md) | [SchemaType.Partial](./tsbuffer-schema.schematype.partial.md) |  |
 

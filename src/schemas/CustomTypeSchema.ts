@@ -1,8 +1,10 @@
+import { SchemaType } from "../models/SchemaType";
+
 /**
  * Custom type, used for custom validate / encode / decode methods.
  */
 export interface CustomTypeSchema {
-    type: 'Custom';
+    type: SchemaType.Custom;
 
     /** Custom validate method */
     validate: (value: any) => {

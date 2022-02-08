@@ -1,3 +1,4 @@
+import { SchemaType } from "../models/SchemaType";
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
@@ -9,7 +10,7 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * See: {@link https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types}
  */
 export interface TupleTypeSchema {
-    type: 'Tuple';
+    type: SchemaType.Tuple;
     elementTypes: TSBufferSchema[];
     optionalStartIndex?: number;
 }

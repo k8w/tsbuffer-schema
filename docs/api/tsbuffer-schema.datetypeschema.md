@@ -24,5 +24,5 @@ type A = Date;
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./tsbuffer-schema.datetypeschema.type.md) | 'Date' |  |
+|  [type](./tsbuffer-schema.datetypeschema.type.md) | [SchemaType.Date](./tsbuffer-schema.schematype.date.md) |  |
 

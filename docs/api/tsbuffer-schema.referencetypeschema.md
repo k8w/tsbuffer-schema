@@ -39,5 +39,5 @@ When parsing a type reference, if `target` includes point, namespace would be pa
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [target](./tsbuffer-schema.referencetypeschema.target.md) | string | SchemaID of reference target |
-|  [type](./tsbuffer-schema.referencetypeschema.type.md) | 'Reference' |  |
+|  [type](./tsbuffer-schema.referencetypeschema.type.md) | [SchemaType.Reference](./tsbuffer-schema.schematype.reference.md) |  |
 

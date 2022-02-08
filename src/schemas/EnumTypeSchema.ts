@@ -1,3 +1,5 @@
+import { SchemaType } from "../models/SchemaType";
+
 /**
  * TypeScript `enum` type
  * 
@@ -19,7 +21,7 @@
  * ```
  */
 export interface EnumTypeSchema {
-    type: 'Enum';
+    type: SchemaType.Enum;
     members: {
         /** Encoding identifier, generated according to the order */
         id: number,
