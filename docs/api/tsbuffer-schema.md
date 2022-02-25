@@ -4,9 +4,9 @@
 
 ## tsbuffer-schema package
 
-## Enumerations
+## Classes
 
-|  Enumeration | Description |
+|  Class | Description |
 |  --- | --- |
 |  [SchemaType](./tsbuffer-schema.schematype.md) | Enum for every possible <code>TSBufferSchema['type']</code> |
 

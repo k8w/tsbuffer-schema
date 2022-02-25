@@ -1,5 +1,4 @@
 import { InterfaceReference } from "../models/InterfaceReference";
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * TypeScript `keyof` feature, to get keys of an interface.
@@ -23,6 +22,6 @@ import { SchemaType } from "../models/SchemaType";
  * ```
  */
 export interface KeyofTypeSchema {
-    type: SchemaType.Keyof;
+    type: 'Keyof';
     target: InterfaceReference;
 }

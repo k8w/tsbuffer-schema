@@ -2,41 +2,41 @@
 
 [Home](./index.md) &gt; [tsbuffer-schema](./tsbuffer-schema.md) &gt; [SchemaType](./tsbuffer-schema.schematype.md)
 
-## SchemaType enum
+## SchemaType class
 
 Enum for every possible `TSBufferSchema['type']`
 
 <b>Signature:</b>
 
 ```typescript
-export declare enum SchemaType 
+export declare class SchemaType 
 ```
 
-## Enumeration Members
+## Properties
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Any | <code>&quot;Any&quot;</code> |  |
-|  Array | <code>&quot;Array&quot;</code> |  |
-|  Boolean | <code>&quot;Boolean&quot;</code> |  |
-|  Buffer | <code>&quot;Buffer&quot;</code> |  |
-|  Custom | <code>&quot;Custom&quot;</code> |  |
-|  Date | <code>&quot;Date&quot;</code> |  |
-|  Enum | <code>&quot;Enum&quot;</code> |  |
-|  IndexedAccess | <code>&quot;IndexedAccess&quot;</code> |  |
-|  Interface | <code>&quot;Interface&quot;</code> |  |
-|  Intersection | <code>&quot;Intersection&quot;</code> |  |
-|  Keyof | <code>&quot;Keyof&quot;</code> |  |
-|  Literal | <code>&quot;Literal&quot;</code> |  |
-|  NonNullable | <code>&quot;NonNullable&quot;</code> |  |
-|  Number | <code>&quot;Number&quot;</code> |  |
-|  Object | <code>&quot;Object&quot;</code> |  |
-|  Omit | <code>&quot;Omit&quot;</code> |  |
-|  Overwrite | <code>&quot;Overwrite&quot;</code> |  |
-|  Partial | <code>&quot;Partial&quot;</code> |  |
-|  Pick | <code>&quot;Pick&quot;</code> |  |
-|  Reference | <code>&quot;Reference&quot;</code> |  |
-|  String | <code>&quot;String&quot;</code> |  |
-|  Tuple | <code>&quot;Tuple&quot;</code> |  |
-|  Union | <code>&quot;Union&quot;</code> |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [Any](./tsbuffer-schema.schematype.any.md) | <code>static</code> | "Any" |  |
+|  [Array](./tsbuffer-schema.schematype.array.md) | <code>static</code> | "Array" |  |
+|  [Boolean](./tsbuffer-schema.schematype.boolean.md) | <code>static</code> | "Boolean" |  |
+|  [Buffer](./tsbuffer-schema.schematype.buffer.md) | <code>static</code> | "Buffer" |  |
+|  [Custom](./tsbuffer-schema.schematype.custom.md) | <code>static</code> | "Custom" |  |
+|  [Date](./tsbuffer-schema.schematype.date.md) | <code>static</code> | "Date" |  |
+|  [Enum](./tsbuffer-schema.schematype.enum.md) | <code>static</code> | "Enum" |  |
+|  [IndexedAccess](./tsbuffer-schema.schematype.indexedaccess.md) | <code>static</code> | "IndexedAccess" |  |
+|  [Interface](./tsbuffer-schema.schematype.interface.md) | <code>static</code> | "Interface" |  |
+|  [Intersection](./tsbuffer-schema.schematype.intersection.md) | <code>static</code> | "Intersection" |  |
+|  [Keyof](./tsbuffer-schema.schematype.keyof.md) | <code>static</code> | "Keyof" |  |
+|  [Literal](./tsbuffer-schema.schematype.literal.md) | <code>static</code> | "Literal" |  |
+|  [NonNullable](./tsbuffer-schema.schematype.nonnullable.md) | <code>static</code> | "NonNullable" |  |
+|  [Number](./tsbuffer-schema.schematype.number.md) | <code>static</code> | "Number" |  |
+|  [Object](./tsbuffer-schema.schematype.object.md) | <code>static</code> | "Object" |  |
+|  [Omit](./tsbuffer-schema.schematype.omit.md) | <code>static</code> | "Omit" |  |
+|  [Overwrite](./tsbuffer-schema.schematype.overwrite.md) | <code>static</code> | "Overwrite" |  |
+|  [Partial](./tsbuffer-schema.schematype.partial.md) | <code>static</code> | "Partial" |  |
+|  [Pick](./tsbuffer-schema.schematype.pick.md) | <code>static</code> | "Pick" |  |
+|  [Reference](./tsbuffer-schema.schematype.reference.md) | <code>static</code> | "Reference" |  |
+|  [String](./tsbuffer-schema.schematype.string.md) | <code>static</code> | "String" |  |
+|  [Tuple](./tsbuffer-schema.schematype.tuple.md) | <code>static</code> | "Tuple" |  |
+|  [Union](./tsbuffer-schema.schematype.union.md) | <code>static</code> | "Union" |  |
 

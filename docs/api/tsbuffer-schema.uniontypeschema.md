@@ -31,5 +31,5 @@ type Gender = 'Male' | 'Female';
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [members](./tsbuffer-schema.uniontypeschema.members.md) | { id: number; type: [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md)<!-- -->; }\[\] |  |
-|  [type](./tsbuffer-schema.uniontypeschema.type.md) | [SchemaType.Union](./tsbuffer-schema.schematype.union.md) |  |
+|  [type](./tsbuffer-schema.uniontypeschema.type.md) | 'Union' |  |
 

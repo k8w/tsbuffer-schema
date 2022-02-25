@@ -7,5 +7,5 @@
 <b>Signature:</b>
 
 ```typescript
-type: SchemaType.Pick;
+type: 'Pick';
 ```

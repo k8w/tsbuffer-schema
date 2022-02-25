@@ -32,5 +32,5 @@ type A = SomeInterface['XXX']
 |  --- | --- | --- |
 |  [index](./tsbuffer-schema.indexedaccesstypeschema.index.md) | string |  |
 |  [objectType](./tsbuffer-schema.indexedaccesstypeschema.objecttype.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) |  |
-|  [type](./tsbuffer-schema.indexedaccesstypeschema.type.md) | [SchemaType.IndexedAccess](./tsbuffer-schema.schematype.indexedaccess.md) |  |
+|  [type](./tsbuffer-schema.indexedaccesstypeschema.type.md) | 'IndexedAccess' |  |
 

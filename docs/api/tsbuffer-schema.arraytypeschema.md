@@ -30,5 +30,5 @@ type B = Array<A>;
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [elementType](./tsbuffer-schema.arraytypeschema.elementtype.md) | [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md) |  |
-|  [type](./tsbuffer-schema.arraytypeschema.type.md) | [SchemaType.Array](./tsbuffer-schema.schematype.array.md) |  |
+|  [type](./tsbuffer-schema.arraytypeschema.type.md) | 'Array' |  |
 

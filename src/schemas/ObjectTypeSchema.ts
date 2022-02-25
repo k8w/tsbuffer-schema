@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * TypeScript `object` type
@@ -17,5 +16,5 @@ import { SchemaType } from "../models/SchemaType";
  * 
  */
 export interface ObjectTypeSchema {
-    type: SchemaType.Object;
+    type: 'Object';
 }

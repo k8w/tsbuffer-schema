@@ -30,5 +30,5 @@ type X2 = A & (B | C);
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [members](./tsbuffer-schema.intersectiontypeschema.members.md) | { id: number; type: [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md)<!-- -->; }\[\] |  |
-|  [type](./tsbuffer-schema.intersectiontypeschema.type.md) | [SchemaType.Intersection](./tsbuffer-schema.schematype.intersection.md) |  |
+|  [type](./tsbuffer-schema.intersectiontypeschema.type.md) | 'Intersection' |  |
 

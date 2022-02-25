@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * TypeScript literal type
@@ -18,7 +17,7 @@ import { SchemaType } from "../models/SchemaType";
  * ```
  */
 export interface LiteralTypeSchema {
-    type: SchemaType.Literal;
+    type: 'Literal';
     // 未定义等同于undefined
     literal?: string | number | boolean | null | undefined;
 }

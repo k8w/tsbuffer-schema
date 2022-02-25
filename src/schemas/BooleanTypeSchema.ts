@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * Primitive `boolean` type
@@ -9,5 +8,5 @@ import { SchemaType } from "../models/SchemaType";
  * ```
  */
 export interface BooleanTypeSchema {
-    type: SchemaType.Boolean;
+    type: 'Boolean';
 }

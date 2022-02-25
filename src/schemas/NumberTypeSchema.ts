@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * Primitive `number` type, with specific scalar type (like `int`, `uint`)
@@ -11,7 +10,7 @@ import { SchemaType } from "../models/SchemaType";
  * - Fixed 64 bit: `double`, `bigint`, `bigint64`, `biguint64`
  */
 export interface NumberTypeSchema {
-    type: SchemaType.Number;
+    type: 'Number';
     /**
      * @defaultValue 'double'
      */

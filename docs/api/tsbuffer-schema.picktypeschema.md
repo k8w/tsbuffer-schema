@@ -22,5 +22,5 @@ See: [https://www.typescriptlang.org/docs/handbook/utility-types.html\#picktype-
 |  --- | --- | --- |
 |  [keys](./tsbuffer-schema.picktypeschema.keys.md) | string\[\] |  |
 |  [target](./tsbuffer-schema.picktypeschema.target.md) | [InterfaceTypeSchema](./tsbuffer-schema.interfacetypeschema.md) \| [InterfaceReference](./tsbuffer-schema.interfacereference.md) \| [UnionTypeSchema](./tsbuffer-schema.uniontypeschema.md) \| [IntersectionTypeSchema](./tsbuffer-schema.intersectiontypeschema.md) |  |
-|  [type](./tsbuffer-schema.picktypeschema.type.md) | [SchemaType.Pick](./tsbuffer-schema.schematype.pick.md) |  |
+|  [type](./tsbuffer-schema.picktypeschema.type.md) | 'Pick' |  |
 

@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
@@ -14,7 +13,7 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * ```
  */
 export interface IntersectionTypeSchema {
-    type: SchemaType.Intersection;
+    type: 'Intersection';
     members: {
         /** Encoding identifier, generated according to the order */
         id: number,

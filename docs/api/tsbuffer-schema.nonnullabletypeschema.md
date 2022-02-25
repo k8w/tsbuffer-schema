@@ -29,5 +29,5 @@ type A = NonNullable<B>;
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [target](./tsbuffer-schema.nonnullabletypeschema.target.md) | [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md) | 引用目标l |
-|  [type](./tsbuffer-schema.nonnullabletypeschema.type.md) | [SchemaType.NonNullable](./tsbuffer-schema.schematype.nonnullable.md) |  |
+|  [type](./tsbuffer-schema.nonnullabletypeschema.type.md) | 'NonNullable' |  |
 

@@ -42,5 +42,5 @@ interface BBB {
 |  [extends?](./tsbuffer-schema.interfacetypeschema.extends.md) | { id: number; type: [InterfaceReference](./tsbuffer-schema.interfacereference.md)<!-- -->; }\[\] | <i>(Optional)</i> Extends which interface |
 |  [indexSignature?](./tsbuffer-schema.interfacetypeschema.indexsignature.md) | { keyType: 'String' \| 'Number'; type: [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md)<!-- -->; } | <i>(Optional)</i> Index Signature <code>undefined</code> represents no index signature, i.e. excess property is not allowed. { \[key: string\]: xxx } |
 |  [properties?](./tsbuffer-schema.interfacetypeschema.properties.md) | { id: number; name: string; optional?: boolean; type: [TSBufferSchema](./tsbuffer-schema.tsbufferschema.md)<!-- -->; }\[\] | <i>(Optional)</i> Self properties (not include extended) |
-|  [type](./tsbuffer-schema.interfacetypeschema.type.md) | [SchemaType.Interface](./tsbuffer-schema.schematype.interface.md) |  |
+|  [type](./tsbuffer-schema.interfacetypeschema.type.md) | 'Interface' |  |
 

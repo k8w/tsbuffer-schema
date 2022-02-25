@@ -28,5 +28,5 @@ type XXX = any;
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./tsbuffer-schema.anytypeschema.type.md) | [SchemaType.Any](./tsbuffer-schema.schematype.any.md) |  |
+|  [type](./tsbuffer-schema.anytypeschema.type.md) | 'Any' |  |
 

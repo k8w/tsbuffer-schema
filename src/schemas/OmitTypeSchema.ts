@@ -1,5 +1,4 @@
 import { InterfaceReference } from '../models/InterfaceReference';
-import { SchemaType } from '../models/SchemaType';
 import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { IntersectionTypeSchema } from './IntersectionTypeSchema';
 import { UnionTypeSchema } from './UnionTypeSchema';
@@ -24,7 +23,7 @@ import { UnionTypeSchema } from './UnionTypeSchema';
  * ```
  */
 export interface OmitTypeSchema {
-    type: SchemaType.Omit;
+    type: 'Omit';
     target: InterfaceTypeSchema | InterfaceReference | UnionTypeSchema | IntersectionTypeSchema;
     keys: string[];
 }

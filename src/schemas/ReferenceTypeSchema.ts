@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /**
  * Type Reference, infers that this type should be equivalent to target type.
@@ -24,7 +23,7 @@ import { SchemaType } from "../models/SchemaType";
  * If `target` doesn't include point, it would be treated as a type name.
  */
 export interface ReferenceTypeSchema {
-    type: SchemaType.Reference;
+    type: 'Reference';
 
     /** SchemaID of reference target */
     target: string;

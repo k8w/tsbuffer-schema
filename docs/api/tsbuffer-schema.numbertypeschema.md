@@ -23,5 +23,5 @@ Encoding:<br/> - [Varint](https://developers.google.com/protocol-buffers/docs/en
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [scalarType?](./tsbuffer-schema.numbertypeschema.scalartype.md) | 'int' \| 'uint' \| 'bigint' \| 'bigint64' \| 'biguint64' \| 'double' | <i>(Optional)</i> |
-|  [type](./tsbuffer-schema.numbertypeschema.type.md) | [SchemaType.Number](./tsbuffer-schema.schematype.number.md) |  |
+|  [type](./tsbuffer-schema.numbertypeschema.type.md) | 'Number' |  |
 

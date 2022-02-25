@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 import { TSBufferSchema } from "../models/TSBufferSchema";
 
 /**
@@ -15,7 +14,7 @@ import { TSBufferSchema } from "../models/TSBufferSchema";
  * ```
  */
 export interface UnionTypeSchema {
-    type: SchemaType.Union;
+    type: 'Union';
     members: {
         // 对应条件MASK第几位
         id: number,

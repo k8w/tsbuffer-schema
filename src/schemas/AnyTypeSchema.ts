@@ -1,4 +1,3 @@
-import { SchemaType } from "../models/SchemaType";
 
 /** 
  * TypeScript `any` type
@@ -12,5 +11,5 @@ import { SchemaType } from "../models/SchemaType";
  * ```
  */
 export interface AnyTypeSchema {
-    type: SchemaType.Any;
+    type: 'Any';
 }

@@ -1,6 +1,5 @@
-import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 import { InterfaceReference } from '../models/InterfaceReference';
-import { SchemaType } from '../models/SchemaType';
+import { InterfaceTypeSchema } from './InterfaceTypeSchema';
 
 /**
  * TSBuffer utility type, which represents overwrite some properties from a interface.
@@ -22,7 +21,7 @@ import { SchemaType } from '../models/SchemaType';
  * ```
  */
 export interface OverwriteTypeSchema {
-    type: SchemaType.Overwrite;
+    type: 'Overwrite';
     target: InterfaceTypeSchema | InterfaceReference;
     overwrite: InterfaceTypeSchema | InterfaceReference;
 }
