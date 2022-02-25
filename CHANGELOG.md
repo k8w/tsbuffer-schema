@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [2.2.0-dev.2] - 2022-01-27
+## [2.2.0] - 2022-02-26
 ### Added
 - new `KeyofTypeSchema`
 ### Changed
